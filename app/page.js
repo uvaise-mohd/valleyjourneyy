@@ -7,6 +7,7 @@ import Accreditation from "@/components/Accreditation";
 import Institutes from "@/components/Institutes";
 import AreaOfStudies from "@/components/AreaOfStudies";
 import Standout from "@/components/Standout";
+import StudentStories from "@/components/StudentStories";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Institutes/>
       <AreaOfStudies/>
       <Standout/>
+      <StudentStories/>
     </div>
   );
 }

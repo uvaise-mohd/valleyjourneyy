@@ -26,11 +26,11 @@ const Header = () => {
     });
   }, []); 
   return (
-    <nav className={`flex justify-between pt-2  items-center px-10 sticky top-0 z-20 ${isSticky ? 'bg-white' : ''} ${libreBaskerville.className}`}>
+    <nav className={`flex justify-between pt-2  items-center px-20 sticky top-0 z-20 ${isSticky ? 'bg-white' : ''} ${libreBaskerville.className}`}>
         <div>
             <Image src={logo}  alt='logo' height={140} width={140}/>
         </div>
-        <ul className='flex gap-10' style={{fontSize:"21px"}}>
+        <ul className='flex gap-10 text-[14]'>
             <Link href={"#"}>Countries</Link>
             <Link href={"#"}>Courses</Link>
             <Link href={"#"}>IELTS</Link>
@@ -39,7 +39,7 @@ const Header = () => {
             <Link href={"#"}>Accommodation</Link>  
         </ul>
 
-        <button className=' text-2xl text-[#2A36AC] border-2 border-solid divide-black rounded-xl p-2 '>
+        <button className='  text-xl text-[#2A36AC] border-2 border-solid divide-black rounded-xl p-2 '>
             Talk To Us
         </button>
         

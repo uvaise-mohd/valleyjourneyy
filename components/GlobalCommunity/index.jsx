@@ -19,7 +19,7 @@ import singapore from '../../public/images/flag-singapore.jpg'
 import { Aleo, Libre_Baskerville, Trocchi} from 'next/font/google'
 
 const libreBaskerville = Libre_Baskerville({
-  weight: "400", // if single weight, otherwise you use array like [400, 500, 700],
+  weight: "700", // if single weight, otherwise you use array like [400, 500, 700],
   style: "normal",
   subsets: ["latin"],
 });
@@ -37,8 +37,8 @@ const trochhi  = Trocchi({
 const GlobalCommunity = () => {
   return (
     <div className="py-10 px-20">
-      <div className={` text-center text-[39px] text-[#083C82] pb-2 ${libreBaskerville.className}`}>Join the global community!</div>
-      <div className={` text-center text-[38px] text-[#413F4D] leading-[50px] pb-10 px-10 ${aleo.className}`}>
+      <div className={` text-center text-[25px] text-[#083C82] pb-1 ${libreBaskerville.className}`}>Join the global community!</div>
+      <div className={` text-center text-[20px] text-[#413F4D] pb-5 px-48 ${aleo.className}`}>
         Be it North America, Europe or Asia, we are with you throughout until
         you get there and even further
       </div>
