@@ -30,6 +30,7 @@ const Header = () => {
         <div>
             <Image src={logo}  alt='logo' height={140} width={140}/>
         </div>
+        <div>
         <ul className='flex gap-10 text-[14]'>
             <Link href={"#"}>Countries</Link>
             <Link href={"#"}>Courses</Link>
@@ -38,6 +39,8 @@ const Header = () => {
             <Link href={"#"}>News</Link>
             <Link href={"#"}>Accommodation</Link>  
         </ul>
+        </div>
+     
 
         <button className='  text-xl text-[#2A36AC] border-2 border-solid divide-black rounded-xl p-2 '>
             Talk To Us

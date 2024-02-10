@@ -4,7 +4,7 @@ import Image from "next/image";
 import office1 from "../../public/images/office/office1.jpg";
 import office2 from "../../public/images/office/office2.jpg";
 import office3 from "../../public/images/office/office3.jpg";
-import time from "../../public/images/time.png";
+import plane from "../../public/images/plane.png";
 import { Libre_Baskerville } from "next/font/google";
 
 const libreBaskerville = Libre_Baskerville({
@@ -63,7 +63,7 @@ const Standout = () => {
       <div className="grid grid-cols-4 grid-rows-2 px-20">
         <div className="flex flex-col gap-1 items-center text-center">
           <div>
-            <Image src={time} alt="" className="h-[150px] w-[150px]" />
+            <Image src={plane} alt="" className="h-[150px] w-[150px]" />
           </div>
           <div
             className={` text-[#2B62A4] text-lg h-[50px] ${libreBaskerville.className}`}
@@ -78,7 +78,7 @@ const Standout = () => {
 
         <div className="flex flex-col gap-1 items-center text-center">
           <div>
-            <Image src={time} alt="" className="h-[150px] w-[150px]" />
+            <Image src={plane} alt="" className="h-[150px] w-[150px]" />
           </div>
           <div
             className={` text-[#2B62A4] text-lg h-[50px] ${libreBaskerville.className}`}
@@ -93,7 +93,7 @@ const Standout = () => {
 
         <div className="flex flex-col gap-1 items-center text-center">
           <div>
-            <Image src={time} alt="" className="h-[150px] w-[150px]" />
+            <Image src={plane} alt="" className="h-[150px] w-[150px]" />
           </div>
           <div
             className={` text-[#2B62A4] text-lg h-[50px] ${libreBaskerville.className}`}
@@ -108,7 +108,7 @@ const Standout = () => {
 
         <div className="flex flex-col gap-1 items-center text-center">
           <div>
-            <Image src={time} alt="" className="h-[150px] w-[150px]" />
+            <Image src={plane} alt="" className="h-[150px] w-[150px]" />
           </div>
           <div
             className={` text-[#2B62A4] text-lg h-[50px] ${libreBaskerville.className}`}
@@ -123,7 +123,7 @@ const Standout = () => {
 
         <div className="flex flex-col gap-1 items-center text-center">
           <div>
-            <Image src={time} alt="" className="h-[150px] w-[150px]" />
+            <Image src={plane} alt="" className="h-[150px] w-[150px]" />
           </div>
           <div
             className={` text-[#2B62A4] text-lg h-[50px] ${libreBaskerville.className}`}
@@ -138,7 +138,7 @@ const Standout = () => {
 
         <div className="flex flex-col gap-1 items-center text-center">
           <div>
-            <Image src={time} alt="" className="h-[150px] w-[150px]" />
+            <Image src={plane} alt="" className="h-[150px] w-[150px]" />
           </div>
           <div
             className={` text-[#2B62A4] text-lg h-[50px] ${libreBaskerville.className}`}
@@ -153,7 +153,7 @@ const Standout = () => {
 
         <div className="flex flex-col gap-1 items-center text-center">
           <div>
-            <Image src={time} alt="" className="h-[150px] w-[150px]" />
+            <Image src={plane} alt="" className="h-[150px] w-[150px]" />
           </div>
           <div
             className={` text-[#2B62A4] text-lg h-[50px] ${libreBaskerville.className}`}
@@ -168,7 +168,7 @@ const Standout = () => {
 
         <div className="flex flex-col gap-1 items-center text-center">
           <div>
-            <Image src={time} alt="" className="h-[150px] w-[150px]" />
+            <Image src={plane} alt="" className="h-[150px] w-[150px]" />
           </div>
           <div
             className={` text-[#2B62A4] text-lg h-[50px] ${libreBaskerville.className}`}
