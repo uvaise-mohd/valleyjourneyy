@@ -32,14 +32,14 @@ const AreaOfStudies = () => {
   return (
     <div className="pt-10">
       <div className={`pb-10 ${libreBaskerville.className}`}>
-        <div className=" text-[35px] text-[#867021] text-center bg-blue-50">
+        <div className="md:text-[38px] sm:text-[32px] text-[26px] text-[#867021] text-center bg-blue-50 font-bold">
           Areas of Studies
         </div>
       </div>
       <div
-        className={`grid grid-rows-5 grid-cols-4 px-20 gap-7 pb-5  ${libreBaskerville.className} `}
+        className={`grid lg:grid-rows-5 lg:grid-cols-4 sm:px-20 gap-7 pb-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 px-4 ${libreBaskerville.className} `}
       >
-        <div className=" flex flex-col items-center text-center gap-3">
+        <div className=" flex flex-col items-center text-center lg:gap-3 md:gap-2 gap-1 pb-2">
           <div>
             <Image
               src={agriculture}
@@ -47,10 +47,10 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] text-[25px] leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px] leading-9 h-[70px] mt-1">
             Agriculture
           </div>
-          <div className=" text-md">
+          <div className="  sm:text-[16px] text-[14px]">
             <ul>
               <li>Agricultural Science</li>
               <li>Farm Management</li>
@@ -61,7 +61,7 @@ const AreaOfStudies = () => {
           </div>
         </div>
 
-        <div className=" flex flex-col items-center text-center gap-3">
+        <div className=" flex flex-col items-center text-center lg:gap-3 md:gap-2 gap-1 pb-2">
           <div>
             <Image
               src={foodandscience}
@@ -69,10 +69,10 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] text-[25px] leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px] leading-9 h-[70px] mt-1">
             Food Science
           </div>
-          <div className="text-md">
+          <div className=" sm:text-[16px] text-[14px]">
             <ul>
               <li>Food Technology</li>
               <li>Food Science</li>
@@ -85,7 +85,7 @@ const AreaOfStudies = () => {
           </div>
         </div>
 
-        <div className=" flex flex-col items-center text-center gap-3">
+        <div className=" flex flex-col items-center text-center lg:gap-3 md:gap-2 gap-1 pb-2">
           <div>
             <Image
               src={EnvironmentClimate}
@@ -93,10 +93,10 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] text-[25px] leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px] leading-9 h-[70px] mt-1">
             Environment & Climate
           </div>
-          <div className="text-md flex">
+          <div className=" sm:text-[16px] text-[14px] flex">
             <ul>
               <li>Environmental Science</li>
               <li>Environmental Engineering</li>
@@ -109,7 +109,7 @@ const AreaOfStudies = () => {
           </div>
         </div>
 
-        <div className=" flex flex-col items-center text-center gap-3">
+        <div className=" flex flex-col items-center text-center lg:gap-3 md:gap-2 gap-1 pb-2">
           <div>
             <Image
               src={disastermanagment}
@@ -117,10 +117,10 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] text-[25px] leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px] leading-9 h-[70px] mt-1">
             Disaster Managemet
           </div>
-          <div className="text-md">
+          <div className=" sm:text-[16px] text-[14px]">
             <ul>
               <li>Fire & Safety Engineering</li>
               <li>Crisis & Disaster Management</li>
@@ -133,7 +133,7 @@ const AreaOfStudies = () => {
           </div>
         </div>
         {/* *********************************************** */}
-        <div className=" flex flex-col items-center text-center gap-3">
+        <div className=" flex flex-col items-center text-center gap-3 pb-2">
           <div>
             <Image
               src={ArchitectureConstruction}
@@ -141,10 +141,10 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] text-[25px] leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px] leading-9 h-[70px] mt-1">
             Architecture & Construction
           </div>
-          <div className="text-md">
+          <div className=" sm:text-[16px] text-[14px]">
             <ul>
               <li>
                 Architecture
@@ -157,7 +157,7 @@ const AreaOfStudies = () => {
           </div>
         </div>
 
-        <div className=" flex flex-col items-center text-center gap-3">
+        <div className=" flex flex-col items-center text-center gap-3 pb-2">
           <div>
             <Image
               src={art}
@@ -165,10 +165,10 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] text-[25px] leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px] leading-9 h-[70px] mt-1">
             Art & Theatre
           </div>
-          <div className="text-md">
+          <div className=" sm:text-[16px] text-[14px]">
             <ul>
               <li>Acting</li>
               <li>Theatre Arts</li>
@@ -182,7 +182,7 @@ const AreaOfStudies = () => {
           </div>
         </div>
 
-        <div className=" flex flex-col items-center text-center gap-3">
+        <div className=" flex flex-col items-center text-center gap-3 pb-2">
           <div>
             <Image
               src={designPhotography}
@@ -190,10 +190,10 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] text-[25px] leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px] leading-9 h-[70px] mt-1">
             Design, Video & Photography
           </div>
-          <div className="text-md">
+          <div className=" sm:text-[16px] text-[14px]">
             <ul>
               <li>Photography</li>
               <li>Video Editing & VFX</li>
@@ -205,7 +205,7 @@ const AreaOfStudies = () => {
           </div>
         </div>
 
-        <div className=" flex flex-col items-center text-center gap-3">
+        <div className=" flex flex-col items-center text-center gap-3 pb-2">
           <div>
             <Image
               src={it}
@@ -213,10 +213,10 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] text-[25px] leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px]  leading-9 h-[70px] mt-1">
             IT & ComputerScience
           </div>
-          <div className="text-md">
+          <div className=" sm:text-[16px] text-[14px]">
             <ul>
               <li>IT & Computer Science</li>
               <li>Networking & Cyber Security</li>
@@ -230,7 +230,7 @@ const AreaOfStudies = () => {
           </div>
         </div>
 
-        <div className=" flex flex-col items-center gap-3 text-center">
+        <div className=" flex flex-col items-center gap-3 text-center pb-2">
           <div>
             <Image
               src={journalism}
@@ -238,10 +238,10 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] text-[25px] leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px]  leading-9 h-[70px] mt-1">
             Journalism
           </div>
-          <div className="text-md">
+          <div className=" sm:text-[16px] text-[14px]">
             <ul>
               <li>Journalism</li>
               <li>Media Management</li>
@@ -253,7 +253,7 @@ const AreaOfStudies = () => {
           </div>
         </div>
 
-        <div className=" flex flex-col items-center gap-3 text-center">
+        <div className=" flex flex-col items-center gap-3 text-center pb-2">
           <div>
             <Image
               src={automobiles}
@@ -261,10 +261,10 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] text-[25px] leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px]  leading-9 h-[70px] mt-1">
             Automobile
           </div>
-          <div className="text-md">
+          <div className=" sm:text-[16px] text-[14px]">
             <ul>
               <li>Mechanical Engineering</li>
               <li>Electric Vehicle Engineering</li>
@@ -277,7 +277,7 @@ const AreaOfStudies = () => {
           </div>
         </div>
 
-        <div className=" flex flex-col items-center gap-3 text-center">
+        <div className=" flex flex-col items-center gap-3 text-center pb-2 ">
           <div>
             <Image
               src={eductn}
@@ -285,10 +285,10 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] text-[25px] leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px]  leading-9 h-[70px] mt-1">
             Education
           </div>
-          <div className="text-md">
+          <div className=" sm:text-[16px] text-[14px]">
             <ul>
               <li>Education</li>
               <li>Special Education</li>
@@ -300,7 +300,7 @@ const AreaOfStudies = () => {
           </div>
         </div>
 
-        <div className=" flex flex-col items-center gap-3 text-center">
+        <div className=" flex flex-col items-center gap-3 text-center pb-2">
           <div>
             <Image
               src={bussinss}
@@ -308,10 +308,10 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] text-[25px] leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px]  leading-9 h-[70px] mt-1">
             Business
           </div>
-          <div className="text-md">
+          <div className=" sm:text-[16px] text-[14px]">
             <ul>
               <li>Marketing</li>
               <li>Human Resource</li>
@@ -326,7 +326,7 @@ const AreaOfStudies = () => {
           </div>
         </div>
         {/* ***********************2**************** */}
-        <div className=" flex flex-col items-center gap-3 text-center">
+        <div className=" flex flex-col items-center gap-3 text-center pb-2">
           <div>
             <Image
               src={finance}
@@ -334,10 +334,10 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] text-[25px] leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px]  leading-9 h-[70px] mt-1">
             Finance, Banking & Investment
           </div>
-          <div className="text-md">
+          <div className=" sm:text-[16px] text-[14px]">
             <ul>
               <li>Accounting & Finance</li>
               <li>Banking</li>
@@ -350,7 +350,7 @@ const AreaOfStudies = () => {
           </div>
         </div>
 
-        <div className=" flex flex-col items-center gap-3 text-center">
+        <div className=" flex flex-col items-center gap-3 text-center pb-2">
           <div>
             <Image
               src={health}
@@ -358,10 +358,10 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] text-[25px] leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px]  leading-9 h-[70px] mt-1">
             Health & Welbeing
           </div>
-          <div className="text-md">
+          <div className=" sm:text-[16px] text-[14px]">
             <ul>
               <li>Nursing</li>
               <li>Public Health</li>
@@ -376,7 +376,7 @@ const AreaOfStudies = () => {
           </div>
         </div>
 
-        <div className=" flex flex-col items-center gap-3 text-center">
+        <div className=" flex flex-col items-center gap-3 text-center pb-2">
           <div>
             <Image
               src={animals}
@@ -384,10 +384,10 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] text-[25px] leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px]  leading-9 h-[70px] mt-1">
             Animals
           </div>
-          <div className="text-md">
+          <div className=" sm:text-[16px] text-[14px]">
             <ul>
               <li>Veterinary Science n</li>
               <li>Veterinary Medicine</li>
@@ -398,7 +398,7 @@ const AreaOfStudies = () => {
           </div>
         </div>
 
-        <div className=" flex flex-col items-center gap-3 text-center">
+        <div className=" flex flex-col items-center gap-3 text-center pb-2">
           <div>
             <Image
               src={socialandbehaviouralscience}
@@ -406,10 +406,10 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] text-[25px] leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px]  leading-9 h-[70px] mt-1">
             Social & Behavioral Science
           </div>
-          <div className="text-md">
+          <div className=" sm:text-[16px] text-[14px]">
             <ul>
               <li>Behavioural Science</li>
               <li>Psychology</li>
@@ -423,7 +423,7 @@ const AreaOfStudies = () => {
           </div>
         </div>
 
-        <div className=" flex flex-col items-center gap-3 text-center">
+        <div className=" flex flex-col items-center gap-3 text-center pb-2">
           <div>
             <Image
               src={travelfashion}
@@ -431,10 +431,10 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] text-[25px] leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px]  leading-9 h-[70px] mt-1">
             Travel, Tourism, Food, & Fashion
           </div>
-          <div className="text-md">
+          <div className=" sm:text-[16px] text-[14px]">
             <ul>
               <li>Hospitality Management</li>
               <li>Event Management</li>
@@ -446,7 +446,7 @@ const AreaOfStudies = () => {
           </div>
         </div>
 
-        <div className=" flex flex-col items-center gap-3 text-center">
+        <div className=" flex flex-col items-center gap-3 text-center pb-2">
           <div>
             <Image
               src={aviation}
@@ -454,10 +454,10 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] text-[25px] leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px]  leading-9 h-[70px] mt-1">
             Aviation
           </div>
-          <div className="text-md">
+          <div className=" sm:text-[16px] text-[14px]">
             <ul>
               <li>Aviation</li>
               <li>Student Pilot License</li>
@@ -470,7 +470,7 @@ const AreaOfStudies = () => {
           </div>
         </div>
 
-        <div className=" flex flex-col items-center gap-2 text-center">
+        <div className=" flex flex-col items-center gap-2 text-center pb-2">
           <div>
             <Image
               src={pharmacy}
@@ -478,10 +478,10 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] text-[25px] leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px]  leading-9 h-[70px] mt-1">
             Pharmacy
           </div>
-          <div className="text-md">
+          <div className=" sm:text-[16px] text-[14px]">
             <ul>
               <li>Pharmacology</li>
               <li>Pharmaceutical Science</li>
@@ -494,7 +494,7 @@ const AreaOfStudies = () => {
           </div>
         </div>
 
-        <div className=" flex flex-col items-center gap-3 text-center">
+        <div className=" flex flex-col items-center gap-3 text-center pb-2">
           <div>
             <Image
               src={engineering}
@@ -502,10 +502,10 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] text-[25px] leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px]   leading-9 h-[70px] mt-1">
             Engineering
           </div>
-          <div className="text-md">
+          <div className=" sm:text-[16px] text-[14px]">
             <ul>
               <li>Mining Engineering</li>
               <li>Petroleum Engineering</li>

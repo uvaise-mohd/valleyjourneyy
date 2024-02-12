@@ -15,27 +15,30 @@ const lora = Lora({
 
 const StudentStories = () => {
   return (
-    <div className="px-20 py-10">
-      <div
-        className={`text-[26px] bg-[#184420] text-white py-3 mx-[430px] text-center items-center rounded-[30px] uppercase mb-8 ${libreBaskerville.className}`}
-      >
-        Student Stories
+    <div className=" py-10">
+      <div className="flex justify-center">
+        <div
+          className={` inline-block sm:text-[26px] text-2xl bg-[#184420] text-white py-3 text-center items-center rounded-[30px] uppercase mb-6 sm:px-20 px-4 ${libreBaskerville.className}`}
+        >
+          Student Stories
+        </div>
       </div>
+
       <div
-        className={`text-[28px] font-bold text-[#184420] text-center  ${libreBaskerville.className}`}
+        className={`sm:text-[28px] text-2xl font-bold text-[#184420] text-center sm:px-32 px-4  ${libreBaskerville.className}`}
       >
         Some Good Words from Our Students
       </div>
       <div
-        className={`text-[18px] text-center text-[#184420] pb-5 px-56 ${libreBaskerville.className}`}
+        className={`sm:text-[18px] text-base text-center text-[#184420] pb-5 sm:px-28 px-4 ${libreBaskerville.className}`}
       >
         We asked our students whether our support and training sessions were as
         smooth as we had promised.
       </div>
 
-      <div className={`grid grid-cols-3 grid-rows-2 gap-4`}>
+      <div className={`grid lg:grid-cols-3 lg:grid-rows-2 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-4 sm:px-20 px-4`}>
         <div className="border-2 border-[#E8F6BA] rounded-[45px] px-8 pt-4 text-center">
-          <div className={`text-base bg-[#E8F6BA] pb-4 ${lora.className}`}>
+          <div className={`sm:text-base text-sm bg-[#E8F6BA] pb-4 ${lora.className}`}>
             “I had the great support and care from Valley Journey, and the best
             things about their support is that they were always available when I
             called them to clarify any doubt or share any concerns
@@ -46,7 +49,7 @@ const StudentStories = () => {
         </div>
 
         <div className="border-2 border-[#E8F6BA] rounded-[45px] px-8 pt-4 text-center">
-          <div className={`text-base bg-[#E8F6BA] pb-4 ${lora.className}`}>
+          <div className={`sm:text-base text-sm bg-[#E8F6BA] pb-4 ${lora.className}`}>
             “I had the great support and care from Valley Journey, and the best
             things about their support is that they were always available when I
             called them to clarify any doubt or share any concerns
@@ -57,7 +60,7 @@ const StudentStories = () => {
         </div>
 
         <div className="border-2 border-[#E8F6BA] rounded-[45px] px-8 pt-4 text-center">
-          <div className={`text-base bg-[#E8F6BA] pb-4 ${lora.className}`}>
+          <div className={`sm:text-base text-sm bg-[#E8F6BA] pb-4 ${lora.className}`}>
             “I had the great support and care from Valley Journey, and the best
             things about their support is that they were always available when I
             called them to clarify any doubt or share any concerns
@@ -68,7 +71,7 @@ const StudentStories = () => {
         </div>
 
         <div className="border-2 border-[#E8F6BA] rounded-[45px] px-8 pt-4 text-center">
-          <div className={`text-base bg-[#E8F6BA] pb-4 ${lora.className}`}>
+          <div className={`sm:text-base text-sm bg-[#E8F6BA] pb-4 ${lora.className}`}>
             “I had the great support and care from Valley Journey, and the best
             things about their support is that they were always available when I
             called them to clarify any doubt or share any concerns
@@ -79,7 +82,7 @@ const StudentStories = () => {
         </div>
 
         <div className="border-2 border-[#E8F6BA] rounded-[45px] px-8 pt-4 text-center">
-          <div className={`text-base bg-[#E8F6BA] pb-4 ${lora.className}`}>
+          <div className={`sm:text-base text-sm bg-[#E8F6BA] pb-4 ${lora.className}`}>
             “I had the great support and care from Valley Journey, and the best
             things about their support is that they were always available when I
             called them to clarify any doubt or share any concerns
@@ -90,7 +93,7 @@ const StudentStories = () => {
         </div>
 
         <div className="border-2 border-[#E8F6BA] rounded-[45px] px-8 pt-4 text-center">
-          <div className={`text-base bg-[#E8F6BA] pb-4 ${lora.className}`}>
+          <div className={`sm:text-base text-sm bg-[#E8F6BA] pb-4 ${lora.className}`}>
             “I had the great support and care from Valley Journey, and the best
             things about their support is that they were always available when I
             called them to clarify any doubt or share any concerns

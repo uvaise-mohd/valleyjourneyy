@@ -36,13 +36,13 @@ const trochhi  = Trocchi({
 
 const GlobalCommunity = () => {
   return (
-    <div className="py-10 px-20">
-      <div className={` text-center text-[25px] text-[#083C82] pb-1 ${libreBaskerville.className}`}>Join the global community!</div>
-      <div className={` text-center text-[20px] text-[#413F4D] pb-5 px-48 ${aleo.className}`}>
+    <div className="py-10">
+      <div className={` text-center font-bold md:text-[25px] text-[#083C82] pb-1 sm:text-xl  text-lg   ${libreBaskerville.className}`}>Join the global community!</div>
+      <div className={` text-center md:text-[20px] text-[#413F4D] pb-5 md:px-48 sm:text-lg sm:px-24 px-7 ${aleo.className}`}>
         Be it North America, Europe or Asia, we are with you throughout until
         you get there and even further
       </div>
-      <div className={`grid grid-rows-3 grid-cols-5 pb-5 gap-4 ${trochhi.className}`}>
+      <div className={`grid lg:grid-rows-3 lg:grid-cols-5 pb-5 gap-4 lg:px-20 md:px-20 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 px-4 ${trochhi.className}`} >
         <div>
             <Image src={canada} alt="canada" className="border-2 border-solid  divide-black rounded-xl" />
             <div className="text-center">canada</div>
