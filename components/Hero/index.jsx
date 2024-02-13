@@ -32,16 +32,15 @@ const Hero = () => {
   }, []); 
   return (
     <div className="min-h-[90vh]"> 
-      <div className="px-20">
-        <div className="flex justify-between">
+      <div className="sm:px-20 px-4">
+        <div className="flex lg:flex-row flex-col justify-between">
           <div className="flex flex-col justify-center">
-            <div className={`text-[#083C82] text-[35px]  font-bold ${libreBaskerville.className}`}>
+            <div className={`text-[#083C82] sm:text-[35px] text-[30px] pt-3  font-bold ${libreBaskerville.className}`}>
               Travel and explore your favourite country as an international
               student
             </div>
-            <div className={`text-[#2B202A] text-[22px]  block font-bold ${aleo.className}`}>
-              <div>Over fifteen countries across the world to study in!</div>
-              <div>Enjoy a new lease of life through Valley Journey.</div>
+            <div className={`text-[#2B202A] sm:text-[22px] text-xl font-bold ${aleo.className}`}>
+              <div>Over fifteen countries across the world to study in! Enjoy a new lease of life through Valley Journey.</div>
             </div>
           </div>
 

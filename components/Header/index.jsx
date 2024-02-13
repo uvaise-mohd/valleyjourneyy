@@ -1,10 +1,11 @@
-
 "use client";
-import Image from 'next/image'
-import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
-import logo from '../../public/images/valleyJourney.png'
+import Image from "next/image";
+import Link from "next/link";
+import React, { useEffect, useState } from "react";
+import logo from "../../public/images/valleyJourney.png";
 import { Libre_Baskerville } from "next/font/google";
+import { MdOutlineMenu } from "react-icons/md";
+import { IoClose } from "react-icons/io5";
 
 const libreBaskerville = Libre_Baskerville({
   weight: "400", // if single weight, otherwise you use array like [400, 500, 700],
@@ -12,43 +13,70 @@ const libreBaskerville = Libre_Baskerville({
   subsets: ["latin"],
 });
 
-
 const Header = () => {
-
   const [isSticky, setIsSticky] = useState(false);
+  const [closeIcon, setCloseIcon] = useState(false);
   useEffect(() => {
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       if (window.scrollY > 0) {
         setIsSticky(true);
       } else {
         setIsSticky(false);
       }
     });
-  }, []); 
+  }, []);
+
+  // const navLinks = document.querySelector('.navlinks') 
+  // console.log(navLinks); 
+
+  const menuIcon = () => {
+    setCloseIcon((prevCloseIcon) => !prevCloseIcon);
+    // navLinks.classList.toggle('top-[75px]') 
+
+    const navLinks = document.querySelector('.navlinks'); // Replace with your actual ID
+    if (navLinks) {
+      navLinks.classList.toggle("top-[75px]");
+    }
+  };
+
   return (
-    <nav className={`flex justify-between pt-2  items-center px-20 sticky top-0 z-20 ${isSticky ? 'bg-white' : ''} ${libreBaskerville.className}`}>
-        <div>
-            <Image src={logo}  alt='logo' height={140} width={140}/>
-        </div>
-        <div>
-        <ul className='flex gap-10 text-[14]'>
-            <Link href={"#"}>Countries</Link>
-            <Link href={"#"}>Courses</Link>
-            <Link href={"#"}>IELTS</Link>
-            <Link href={"#"}>About Us</Link>
-            <Link href={"#"}>News</Link>
-            <Link href={"#"}>Accommodation</Link>  
+    <nav
+      className={`flex justify-between sm:pt-2 pt-6  items-center sticky top-0 z-20 sm:px-20 px-4 bg-white ${libreBaskerville.className}`}
+    >
+      <div className="">
+        <Image
+          src={logo}
+          alt="logo"
+          className=""
+          height={120}
+          width={120}
+        />
+      </div>
+      <div>
+        <ul className=" navlinks duration-500 flex sm:static sm:flex-row flex-col absolute  sm:min-h-fit top-[-800%] left-0 bg-white w-full sm:w-auto  min-h-[90vh]  gap-10 sm:items-center items-start py-10 sm:text-base text-sm  px-4">
+          <Link href={"#"}>Countries</Link>
+          <Link href={"#"}>Courses</Link>
+          <Link href={"#"}>IELTS</Link>
+          <Link href={"#"}>About Us</Link>
+          <Link href={"#"}>News</Link>
+          <Link href={"#"}>Accommodation</Link>
         </ul>
-        </div>
-     
+      </div>
 
-        <button className='  text-xl text-[#2A36AC] border-2 border-solid divide-black rounded-xl p-2 '>
-            Talk To Us
+      <div className=" flex gap-2 items-center">
+        <button className="  sm:text-xl text-base text-[#2A36AC] border-2 border-solid divide-black rounded-xl p-2  ">
+          Talk To Us
         </button>
-        
-        
+        <div className="flex items-center  sm:hidden" onClick={menuIcon}>
+          {closeIcon ? (
+            <IoClose className=" text-3xl cursor-pointer" />
+          ) : (
+            <MdOutlineMenu className=" text-3xl cursor-pointer" />
+          )}
+        </div>
+      </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
