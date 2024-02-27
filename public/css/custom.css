@@ -1,16 +1,38 @@
 .content-section-1 {
-    background-image: url('../images/hero.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    position: relative;
+  background-image: url("../images/hero.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
 }
-.stickey-header-active{
-    background-color: "black";
+.stickey-header-active {
+  background-color: "black";
 }
 
-@media only screen and ( max-width:640px){
-    
+@media only screen and (min-width: 641px) and (max-width: 1110px) {
+  .widthsetup {
+    gap: 14px;
+  }
+}
+@media only screen and (min-width: 920px) {
+  .navsetup {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    min-height: fit-content;
+    align-items: center;
+  }
+  .menubar {
+    display: none;
+  }
+}
+@media only screen and (min-width:640px){
+    .navsetup{
+      
+    }
+}
+@media only screen and (max-width:639px){
+  
 }
 
 

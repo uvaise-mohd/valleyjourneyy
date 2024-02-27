@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import hero from '../../public/images/hero.png'
+import hero from '../../public/images/svg/hero.svg'
 import { Aleo, Libre_Baskerville } from 'next/font/google'
 
 const libreBaskerville = Libre_Baskerville({
@@ -31,7 +31,7 @@ const Hero = () => {
     });
   }, []); 
   return (
-    <div className="min-h-[90vh]"> 
+    <div className="min-h-[65vh] lg:min-h-[30vh]"> 
       <div className="sm:px-20 px-4">
         <div className="flex lg:flex-row flex-col justify-between">
           <div className="flex flex-col justify-center">

@@ -1,7 +1,7 @@
 import React from "react";
 import { Libre_Baskerville } from "next/font/google";
 import Image from "next/image";
-import accreditation from "../../public/images/Acreditation.png";
+import accreditation from "../../public/images/svg/accreditation/accreditationn.svg";
 
 const libreBaskerville = Libre_Baskerville({
   weight: "400", // if single weight, otherwise you use array like [400, 500, 700],

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import logo from "../../public/images/valleyJourney.png";
+import logo from "../../public/images/svg/headerlogo.svg";
 import { Libre_Baskerville } from "next/font/google";
 import { MdOutlineMenu } from "react-icons/md";
 import { IoClose } from "react-icons/io5";
@@ -48,12 +48,12 @@ const Header = () => {
           src={logo}
           alt="logo"
           className=""
-          height={120}
-          width={120}
+          height={130}
+          width={130}
         />
       </div>
       <div>
-        <ul className=" navlinks duration-500 flex sm:static sm:flex-row flex-col absolute  sm:min-h-fit top-[-800%] left-0 bg-white w-full sm:w-auto  min-h-[90vh]  gap-10 sm:items-center items-start py-10 sm:text-base text-sm  px-4">
+        <ul className=" navlinks navsetup duration-500 flex  flex-col absolute  top-[-800%] left-0 bg-white w-full widthsetup  gap-10 items-start py-10 xl:text-lg lg:text-base text-sm px-4">
           <Link href={"#"}>Countries</Link>
           <Link href={"#"}>Courses</Link>
           <Link href={"#"}>IELTS</Link>
@@ -63,11 +63,11 @@ const Header = () => {
         </ul>
       </div>
 
-      <div className=" flex gap-2 items-center">
-        <button className="  sm:text-xl text-base text-[#2A36AC] border-2 border-solid divide-black rounded-xl p-2  ">
+      <div className="a flex gap-2 items-center">
+        <button className="sm:text-lg xl:text-xl text-base text-[#2A36AC] border-2 border-solid divide-black rounded-xl p-1 lg:p-2  ">
           Talk To Us
         </button>
-        <div className="flex items-center  sm:hidden" onClick={menuIcon}>
+        <div className="menubar flex items-center" onClick={menuIcon}>
           {closeIcon ? (
             <IoClose className=" text-3xl cursor-pointer" />
           ) : (
@@ -75,6 +75,7 @@ const Header = () => {
           )}
         </div>
       </div>
+
     </nav>
   );
 };

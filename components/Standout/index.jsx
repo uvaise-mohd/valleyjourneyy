@@ -4,7 +4,18 @@ import Image from "next/image";
 import office1 from "../../public/images/office/office1.jpg";
 import office2 from "../../public/images/office/office2.jpg";
 import office3 from "../../public/images/office/office3.jpg";
-import plane from "../../public/images/plane.png";
+import DelayfreeProcessing from "../../public/images/svg/standout/DelayfreeProcessing.svg"
+import AuthenticInformation from "../../public/images/svg/standout/AuthenticInformation.svg"
+import QuickOfferLetter from "../../public/images/svg/standout/QuickOfferLetter.svg"
+import AestheticApplicationProces from "../../public/images/svg/standout/AestheticApplicationProces.svg"
+import DetailedDocumentAssessment from "../../public/images/svg/standout/DetailedDocumentAssessment.svg"
+import TuitionFeeReduction from "../../public/images/svg/standout/TuitionFeeReduction.svg"
+import FriendlyExperiencedStaff from "../../public/images/svg/standout/Friendly&ExperiencedStaff.svg"
+import postarrivalhelp from "../../public/images/svg/standout/postarrivalhelp.svg"
+
+
+
+
 import { Libre_Baskerville } from "next/font/google";
 
 const libreBaskerville = Libre_Baskerville({
@@ -102,7 +113,7 @@ const Standout = () => {
       <div className="grid lg:grid-cols-4 lg:grid-rows-2 sm:grid-cols-2   sm:px-20 px-4 font-bold">
         <div className="flex flex-col gap-1 items-center text-center">
           <div>
-            <Image src={plane} alt="" className="h-[150px] w-[150px]" />
+            <Image src={DelayfreeProcessing} alt="" className="h-[150px] w-[150px]" />
           </div>
           <div
             className={` text-[#2B62A4] sm:text-lg text-base h-[50px] ${libreBaskerville.className}`}
@@ -117,7 +128,7 @@ const Standout = () => {
 
         <div className="flex flex-col gap-1 items-center text-center">
           <div>
-            <Image src={plane} alt="" className="h-[150px] w-[150px]" />
+            <Image src={AuthenticInformation} alt="" className="h-[150px] w-[150px]" />
           </div>
           <div
             className={` text-[#2B62A4] sm:text-lg text-base h-[50px] ${libreBaskerville.className}`}
@@ -132,12 +143,12 @@ const Standout = () => {
 
         <div className="flex flex-col gap-1 items-center text-center">
           <div>
-            <Image src={plane} alt="" className="h-[150px] w-[150px]" />
+            <Image src={QuickOfferLetter} alt="" className="h-[150px] w-[150px]" />
           </div>
           <div
             className={` text-[#2B62A4] sm:text-lg text-base h-[50px] ${libreBaskerville.className}`}
           >
-            Quick Offer Letter{" "}
+            Quick Offer Letter
           </div>
           <div className={` text-sm   ${aleo.className}`}>
             We generally can get Offer Letters in a short period thanks to our
@@ -147,7 +158,7 @@ const Standout = () => {
 
         <div className="flex flex-col gap-1 items-center text-center">
           <div>
-            <Image src={plane} alt="" className="h-[150px] w-[150px]" />
+            <Image src={AestheticApplicationProces} alt="" className="h-[150px] w-[150px]" />
           </div>
           <div
             className={` text-[#2B62A4] sm:text-lg text-base h-[50px] ${libreBaskerville.className}`}
@@ -162,7 +173,7 @@ const Standout = () => {
 
         <div className="flex flex-col gap-1 items-center text-center">
           <div>
-            <Image src={plane} alt="" className="h-[150px] w-[150px]" />
+            <Image src={DetailedDocumentAssessment} alt="" className="h-[150px] w-[150px]" />
           </div>
           <div
             className={` text-[#2B62A4] sm:text-lg text-base h-[50px] ${libreBaskerville.className}`}
@@ -177,7 +188,7 @@ const Standout = () => {
 
         <div className="flex flex-col gap-1 items-center text-center">
           <div>
-            <Image src={plane} alt="" className="h-[150px] w-[150px]" />
+            <Image src={TuitionFeeReduction} alt="" className="h-[150px] w-[150px]" />
           </div>
           <div
             className={` text-[#2B62A4] sm:text-lg text-base h-[50px] ${libreBaskerville.className}`}
@@ -192,7 +203,7 @@ const Standout = () => {
 
         <div className="flex flex-col gap-1 items-center text-center">
           <div>
-            <Image src={plane} alt="" className="h-[150px] w-[150px]" />
+            <Image src={FriendlyExperiencedStaff} alt="" className="h-[150px] w-[150px]" />
           </div>
           <div
             className={` text-[#2B62A4] sm:text-lg text-base h-[50px] ${libreBaskerville.className}`}
@@ -207,7 +218,7 @@ const Standout = () => {
 
         <div className="flex flex-col gap-1 items-center text-center">
           <div>
-            <Image src={plane} alt="" className="h-[150px] w-[150px]" />
+            <Image src={postarrivalhelp} alt="" className="h-[150px] w-[150px]" />
           </div>
           <div
             className={` text-[#2B62A4] sm:text-lg text-base h-[50px] ${libreBaskerville.className}`}
