@@ -1,9 +1,13 @@
 import React from "react";
 import { Aleo, Trocchi } from "next/font/google";
 import Image from "next/image";
-import office1 from "../../public/images/office/office1.jpg";
-import office2 from "../../public/images/office/office2.jpg";
-import office3 from "../../public/images/office/office3.jpg";
+import standout1 from '../../public/images/svg/standout/standout1.svg'
+import standout2 from '../../public/images/svg/standout/standout2.svg'
+import standout3 from '../../public/images/svg/standout/standout3.svg'
+import standout4 from '../../public/images/svg/standout/standout4.svg'
+import standout5 from '../../public/images/svg/standout/standout5.svg'
+import standout6 from '../../public/images/svg/standout/standout6.svg'
+
 import DelayfreeProcessing from "../../public/images/svg/standout/DelayfreeProcessing.svg"
 import AuthenticInformation from "../../public/images/svg/standout/AuthenticInformation.svg"
 import QuickOfferLetter from "../../public/images/svg/standout/QuickOfferLetter.svg"
@@ -47,7 +51,7 @@ const Standout = () => {
           <div className="grid lg:grid-rows-1 lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-1 px-2">
             <div>
               <Image
-                src={office3}
+                src={standout1}
                 alt="office"
                 className="sm:height={600} sm:width={600} "
                 height={500}
@@ -56,7 +60,7 @@ const Standout = () => {
             </div>
             <div>
               <Image
-                src={office2}
+                src={standout2}
                 alt="office"
                 className="sm:height={600} sm:width={600} "
                 height={500}
@@ -65,7 +69,7 @@ const Standout = () => {
             </div>
             <div>
               <Image
-                src={office3}
+                src={standout3}
                 alt="office"
                 className="sm:height={600} sm:width={600} "
                 height={500}
@@ -74,7 +78,7 @@ const Standout = () => {
             </div>
             <div>
               <Image
-                src={office1}
+                src={standout4}
                 alt="office"
                 className="sm:height={600} sm:width={600} "
                 height={500}
@@ -83,7 +87,7 @@ const Standout = () => {
             </div>
             <div>
               <Image
-                src={office2}
+                src={standout5}
                 alt="office"
                 className="sm:height={600} sm:width={600} "
                 height={500}
@@ -92,7 +96,7 @@ const Standout = () => {
             </div>
             <div>
               <Image
-                src={office3}
+                src={standout6}
                 alt="office"
                 className="sm:height={600} sm:width={600} "
                 height={500}
