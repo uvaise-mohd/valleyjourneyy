@@ -27,7 +27,7 @@ const libreBaskerville = Libre_Baskerville({
 const Footer = () => {
   return (
     <div className=" ">
-      <div className="bg-[#020126] text-white py-3">
+      <div className="bg-[#000125] text-white py-3 ">
         <div
           className={`flex justify-center md:text-3xl sm:text-[25px] text-[20px] pb-4 ${belleza.className}`}
         >
@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
 
         <div
-          className={`md:text-xl sm:text-lg text-base flex sm:flex-row flex-col sm:justify-between text-center justify-center pb-8 lg:px-32 md:px-24 sm:px-16 ${cardo.className}`}
+          className={`md:text-xl sm:text-lg text-base flex sm:flex-row flex-col sm:justify-between text-center justify-center pb-8  sm:px-20 md:px-32  px-4 ${cardo.className}`}
         >
           <div>Preferred Country</div>
           <div>Preferred Area of Studies</div>
@@ -120,7 +120,7 @@ const Footer = () => {
       <div className={`${belleza.className} bg-[#224039] items-center flex flex-row justify-center gap-2 px-4 py-2 text-white`}>
         <div></div>
         <div className=" text-lg text-center ">
-           2024 Valley Journey Overseas Education LLP : All rights reserved
+           2024 Valley Journey Overseas Education LLP : All rights reserved       
         </div>
       </div>
     </div>

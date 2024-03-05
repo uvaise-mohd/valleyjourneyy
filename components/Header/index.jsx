@@ -26,14 +26,14 @@ const Header = () => {
     });
   }, []);
 
-  // const navLinks = document.querySelector('.navlinks') 
-  // console.log(navLinks); 
+  // const navLinks = document.querySelector('.navlinks')
+  // console.log(navLinks);
 
   const menuIcon = () => {
     setCloseIcon((prevCloseIcon) => !prevCloseIcon);
-    // navLinks.classList.toggle('top-[75px]') 
+    // navLinks.classList.toggle('top-[75px]')
 
-    const navLinks = document.querySelector('.navlinks'); // Replace with your actual ID
+    const navLinks = document.querySelector(".navlinks"); // Replace with your actual ID
     if (navLinks) {
       navLinks.classList.toggle("top-[75px]");
     }
@@ -41,30 +41,26 @@ const Header = () => {
 
   return (
     <nav
-      className={`flex justify-between sm:pt-2 pt-6  items-center sticky top-0 z-20 sm:px-20 px-4 bg-white ${libreBaskerville.className}`}
+      className={`flex justify-between sm:pt-2 pt-6  items-center sticky top-0 z-20 sm:px-24 px-4 bg-white ${libreBaskerville.className}`}
     >
-      <div className="">
-        <Image
-          src={logo}
-          alt="logo"
-          className=""
-          height={130}
-          width={130}
-        />
-      </div>
-      <div>
-        <ul className=" navlinks navsetup duration-500 flex  flex-col absolute  top-[-800%] left-0 bg-white w-full widthsetup  gap-10 items-start py-10 xl:text-lg lg:text-base text-sm px-4">
-          <Link href={"#"}>Countries</Link>
-          <Link href={"#"}>Courses</Link>
-          <Link href={"#"}>IELTS</Link>
-          <Link href={"#"}>About Us</Link>
-          <Link href={"#"}>News</Link>
-          <Link href={"#"}>Accommodation</Link>
-        </ul>
+      <div className="flex items-center lg:gap-2 xl:gap-3 2xl:gap-4">
+        <div>
+          <Image src={logo} alt="logo" className="" height={160} width={160} />
+        </div>
+        <div>
+          <ul className=" navlinks navsetup duration-500 flex  flex-col absolute  top-[-800%] left-0 bg-white w-full widthsetup  gap-12 items-start py-10  text-sm px-4 xl:gap-6 2xl:gap-7 ">
+            <Link href={"#"}>Countries</Link>
+            <Link href={"#"}>Courses</Link>
+            <Link href={"#"}>IELTS</Link>
+            <Link href={"#"}>About Us</Link>
+            <Link href={"#"}>News</Link>
+            <Link href={"#"}>Accommodation</Link>
+          </ul>
+        </div>
       </div>
 
-      <div className="a flex gap-2 items-center">
-        <button className="sm:text-lg xl:text-xl text-base text-[#2A36AC] border-2 border-solid divide-black rounded-xl p-1 lg:p-2  ">
+      <div className="flex gap-2 items-center   ">
+        <button className="sm:text-lg xl:text-xl text-base text-[#2A36AC] border-2 border-solid divide-black rounded-xl p-1 lg:p-2   ">
           Talk To Us
         </button>
         <div className="menubar flex items-center" onClick={menuIcon}>
@@ -75,7 +71,6 @@ const Header = () => {
           )}
         </div>
       </div>
-
     </nav>
   );
 };

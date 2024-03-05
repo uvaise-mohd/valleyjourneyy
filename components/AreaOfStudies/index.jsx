@@ -33,31 +33,31 @@ const AreaOfStudies = () => {
   return (
     <div className="pt-10">
       <div className={`pb-10 ${libreBaskerville.className}`}>
-        <div className="md:text-[38px] sm:text-[32px] text-[26px] text-[#867021] text-center bg-blue-50 font-bold">
+        <div className="md:text-[38px] sm:text-[32px] text-[26px] text-[#867021] text-center bg-[#E3F5FF] font-bold">
           Areas of Studies
         </div>
       </div>
       <div
-        className={`grid lg:grid-rows-5 lg:grid-cols-4 sm:px-20 gap-7 pb-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 px-4 ${libreBaskerville.className} `}
+        className={`grid lg:grid-rows-5 lg:grid-cols-4 sm:px-20 gap-7 pb-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:px-32 px-4 ${libreBaskerville.className} `}
       >
         <div className=" flex flex-col items-center text-center lg:gap-3 md:gap-2 gap-1 pb-2">
           <div>
             <Image
-              src={agriculture}
+              src={agriculture} 
               alt="agriculture"
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px] leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base leading-9 h-[70px] mt-1">
             Agriculture
           </div>
-          <div className="  sm:text-[16px] text-[14px]">
+          <div className=" sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li>Agricultural Science</li>
-              <li>Farm Management</li>
-              <li>Sustainable Agriculture</li>
-              <li>Viticulture</li>
-              <li>Horticulture</li>
+              <li type="disc">Agricultural Science</li>
+              <li type="disc">Farm Management</li>
+              <li type="disc">Sustainable Agriculture</li>
+              <li type="disc">Viticulture</li>
+              <li type="disc">Horticulture</li>
             </ul>
           </div>
         </div>
@@ -70,18 +70,18 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px] leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base leading-9 h-[70px] mt-1">
             Food Science
           </div>
-          <div className=" sm:text-[16px] text-[14px]">
+          <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li>Food Technology</li>
-              <li>Food Science</li>
-              <li>Food Science & Biotechnology</li>
-              <li>Food Innovation</li>
-              <li>Food Science & Agriculturee</li>
-              <li>Food Production & Management</li>
-              <li>Food Consumer Marketing</li>
+              <li type="disc">Food Technology</li>
+              <li type="disc">Food Science</li>
+              <li type="disc">Food Science & Biotechnology</li>
+              <li type="disc">Food Innovation</li>
+              <li type="disc">Food Science & Agriculturee</li>
+              <li type="disc">Food Production & Management</li>
+              <li type="disc">Food Consumer Marketing</li>
             </ul>
           </div>
         </div>
@@ -94,18 +94,18 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px] leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base leading-9 h-[70px] mt-1">
             Environment & Climate
           </div>
-          <div className=" sm:text-[16px] text-[14px] flex">
+          <div className="  sm:text-[12px] xl:text-[14px] flex">
             <ul>
-              <li>Environmental Science</li>
-              <li>Environmental Engineering</li>
-              <li>Wildlife Conservation</li>
-              <li>Environmental Managemente</li>
-              <li>Climate Change</li>
-              <li> Water Conservation</li>
-              <li>Ecology & Conservation</li>
+              <li type="disc">Environmental Science</li>
+              <li type="disc">Environmental Engineering</li>
+              <li type="disc">Wildlife Conservation</li>
+              <li type="disc">Environmental Managemente</li>
+              <li type="disc">Climate Change</li>
+              <li type="disc"> Water Conservation</li>
+              <li type="disc">Ecology & Conservation</li>
             </ul>
           </div>
         </div>
@@ -118,18 +118,18 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px] leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base leading-9 h-[70px] mt-1">
             Disaster Managemet
           </div>
-          <div className=" sm:text-[16px] text-[14px]">
+          <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li>Fire & Safety Engineering</li>
-              <li>Crisis & Disaster Management</li>
-              <li>Emergency Management</li>
-              <li>Earthquake Engineering</li>
-              <li>Humanitarian Management</li>
-              <li>Occupation Health & Safety</li>
-              <li>Occupational Therapy</li>
+              <li type="disc">Fire & Safety Engineering</li>
+              <li type="disc">Crisis & Disaster Management</li>
+              <li type="disc">Emergency Management</li>
+              <li type="disc">Earthquake Engineering</li>
+              <li type="disc">Humanitarian Management</li>
+              <li type="disc">Occupation Health & Safety</li>
+              <li type="disc">Occupational Therapy</li>
             </ul>
           </div>
         </div>
@@ -142,17 +142,17 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px] leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base leading-9 h-[70px] mt-1">
             Architecture & Construction
           </div>
-          <div className=" sm:text-[16px] text-[14px]">
+          <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li>
+              <li type="disc">
                 Architecture
-                <li>Civil Engineering</li>
-                <li>Urban Design & Planning</li>
-                <li>Construction Management</li>
-                <li>Sustainable Architecture</li>
+                <li type="disc">Civil Engineering</li>
+                <li type="disc">Urban Design & Planning</li>
+                <li type="disc">Construction Management</li>
+                <li type="disc">Sustainable Architecture</li>
               </li>
             </ul>
           </div>
@@ -166,19 +166,19 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px] leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base leading-9 h-[70px] mt-1">
             Art & Theatre
           </div>
-          <div className=" sm:text-[16px] text-[14px]">
+          <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li>Acting</li>
-              <li>Theatre Arts</li>
-              <li>Film Studies</li>
-              <li> Media & Film Production </li>
-              <li>Music & Performing Arts</li>
-              <li> Screen Writing</li>
+              <li type="disc">Acting</li>
+              <li type="disc">Theatre Arts</li>
+              <li type="disc">Film Studies</li>
+              <li type="disc"> Media & Film Production </li>
+              <li type="disc">Music & Performing Arts</li>
+              <li type="disc"> Screen Writing</li>
               Media Management
-              <li> </li>
+              <li type="disc"> </li>
             </ul>
           </div>
         </div>
@@ -191,17 +191,17 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px] leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base leading-9 h-[70px] mt-1">
             Design, Video & Photography
           </div>
-          <div className=" sm:text-[16px] text-[14px]">
+          <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li>Photography</li>
-              <li>Video Editing & VFX</li>
-              <li>2D and 3D Animation</li>
-              <li>Game Design</li>
-              <li>Horticulture</li>
-              <li>Digital Design</li>
+              <li type="disc">Photography</li>
+              <li type="disc">Video Editing & VFX</li>
+              <li type="disc">2D and 3D Animation</li>
+              <li type="disc">Game Design</li>
+              <li type="disc">Horticulture</li>
+              <li type="disc">Digital Design</li>
             </ul>
           </div>
         </div>
@@ -214,19 +214,19 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px]  leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base  leading-9 h-[70px] mt-1">
             IT & ComputerScience
           </div>
-          <div className=" sm:text-[16px] text-[14px]">
+          <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li>IT & Computer Science</li>
-              <li>Networking & Cyber Security</li>
-              <li>Artificial Intelligence & Robotics</li>
-              <li>Data Science</li>
-              <li>Software Development</li>
-              <li>Digital Forensics </li>
-              <li> Health Informatics</li>
-              <li>Computation Mathematics</li>
+              <li type="disc">IT & Computer Science</li>
+              <li type="disc">Networking & Cyber Security</li>
+              <li type="disc">Artificial Intelligence & Robotics</li>
+              <li type="disc">Data Science</li>
+              <li type="disc">Software Development</li>
+              <li type="disc">Digital Forensics </li>
+              <li type="disc"> Health Informatics</li>
+              <li type="disc">Computation Mathematics</li>
             </ul>
           </div>
         </div>
@@ -239,17 +239,17 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px]  leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base  leading-9 h-[70px] mt-1">
             Journalism
           </div>
-          <div className=" sm:text-[16px] text-[14px]">
+          <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li>Journalism</li>
-              <li>Media Management</li>
-              <li>Creative Writing</li>
-              <li>Communication</li>
-              <li>Digital Journalism</li>
-              <li>Sports Journalism</li>
+              <li type="disc">Journalism</li>
+              <li type="disc">Media Management</li>
+              <li type="disc">Creative Writing</li>
+              <li type="disc">Communication</li>
+              <li type="disc">Digital Journalism</li>
+              <li type="disc">Sports Journalism</li>
             </ul>
           </div>
         </div>
@@ -262,18 +262,18 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px]  leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base  leading-9 h-[70px] mt-1">
             Automobile
           </div>
-          <div className=" sm:text-[16px] text-[14px]">
+          <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li>Mechanical Engineering</li>
-              <li>Electric Vehicle Engineering</li>
-              <li>Automotive Engineering</li>
-              <li>Engineering Management</li>
-              <li>Project Management</li>
-              <li>Robotics & Automation</li>
-              <li>Racing Engine Systems</li>
+              <li type="disc">Mechanical Engineering</li>
+              <li type="disc">Electric Vehicle Engineering</li>
+              <li type="disc">Automotive Engineering</li>
+              <li type="disc">Engineering Management</li>
+              <li type="disc">Project Management</li>
+              <li type="disc">Robotics & Automation</li>
+              <li type="disc">Racing Engine Systems</li>
             </ul>
           </div>
         </div>
@@ -286,17 +286,17 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px]  leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base  leading-9 h-[70px] mt-1">
             Education
           </div>
-          <div className=" sm:text-[16px] text-[14px]">
+          <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li>Education</li>
-              <li>Special Education</li>
-              <li>Autism</li>
-              <li>Inclusive Education</li>
-              <li>Teaching English (TEFL)</li>
-              <li>Physical Education</li>
+              <li type="disc">Education</li>
+              <li type="disc">Special Education</li>
+              <li type="disc">Autism</li>
+              <li type="disc">Inclusive Education</li>
+              <li type="disc">Teaching English (TEFL)</li>
+              <li type="disc">Physical Education</li>
             </ul>
           </div>
         </div>
@@ -309,20 +309,20 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px]  leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base  leading-9 h-[70px] mt-1">
             Business
           </div>
-          <div className=" sm:text-[16px] text-[14px]">
+          <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li>Marketing</li>
-              <li>Human Resource</li>
-              <li>Digital Marketing</li>
-              <li>International Business</li>
-              <li>Business Administration</li>
-              <li> Logistics and Supply Chain</li>
-              <li> Entrepreneurship</li>
-              <li> Business Analytics</li>
-              <li>Project, & Engineering Management</li>
+              <li type="disc">Marketing</li>
+              <li type="disc">Human Resource</li>
+              <li type="disc">Digital Marketing</li>
+              <li type="disc">International Business</li>
+              <li type="disc">Business Administration</li>
+              <li type="disc"> Logistics and Supply Chain</li>
+              <li type="disc"> Entrepreneurship</li>
+              <li type="disc"> Business Analytics</li>
+              <li type="disc">Project, & Engineering Management</li>
             </ul>
           </div>
         </div>
@@ -335,18 +335,18 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px]  leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base  leading-9 h-[70px] mt-1">
             Finance, Banking & Investment
           </div>
-          <div className=" sm:text-[16px] text-[14px]">
+          <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li>Accounting & Finance</li>
-              <li>Banking</li>
-              <li>Investment</li>
-              <li>Real Estate Management</li>
-              <li>Financial Technology</li>
-              <li>Risk Analysis</li>
-              <li>Asset Management</li>
+              <li type="disc">Accounting & Finance</li>
+              <li type="disc">Banking</li>
+              <li type="disc">Investment</li>
+              <li type="disc">Real Estate Management</li>
+              <li type="disc">Financial Technology</li>
+              <li type="disc">Risk Analysis</li>
+              <li type="disc">Asset Management</li>
             </ul>
           </div>
         </div>
@@ -359,20 +359,20 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px]  leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base  leading-9 h-[70px] mt-1">
             Health & Welbeing
           </div>
-          <div className=" sm:text-[16px] text-[14px]">
+          <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li>Nursing</li>
-              <li>Public Health</li>
-              <li>Nutrition</li>
-              <li>Healthcare Management</li>
-              <li>Psychology</li>
-              <li>Health Informatics</li>
-              <li>Biomedical Science</li>
-              <li>Microbiology</li>
-              <li>Radiology</li>
+              <li type="disc">Nursing</li>
+              <li type="disc">Public Health</li>
+              <li type="disc">Nutrition</li>
+              <li type="disc">Healthcare Management</li>
+              <li type="disc">Psychology</li>
+              <li type="disc">Health Informatics</li>
+              <li type="disc">Biomedical Science</li>
+              <li type="disc">Microbiology</li>
+              <li type="disc">Radiology</li>
             </ul>
           </div>
         </div>
@@ -385,16 +385,16 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px]  leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base  leading-9 h-[70px] mt-1">
             Animals
           </div>
-          <div className=" sm:text-[16px] text-[14px]">
+          <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li>Veterinary Science n</li>
-              <li>Veterinary Medicine</li>
-              <li>Veterinary Assistant</li>
-              <li>Animal Audiology</li>
-              <li>Animal Behaviour & Wildlife Conservatio</li>
+              <li type="disc">Veterinary Science n</li>
+              <li type="disc">Veterinary Medicine</li>
+              <li type="disc">Veterinary Assistant</li>
+              <li type="disc">Animal Audiology</li>
+              <li type="disc">Animal Behaviour & Wildlife Conservatio</li>
             </ul>
           </div>
         </div>
@@ -407,19 +407,19 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px]  leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base  leading-9 h-[70px] mt-1">
             Social & Behavioral Science
           </div>
-          <div className=" sm:text-[16px] text-[14px]">
+          <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li>Behavioural Science</li>
-              <li>Psychology</li>
-              <li>Mental Health</li>
-              <li>Cognitive Neuroscience</li>
-              <li>Autism Spectrum Disorders</li>
-              <li>Mind Science, & Counselling</li>
-              <li>Peace & Conflict Analysis</li>
-              <li>Addiction: Prevention & Treatment</li>
+              <li type="disc">Behavioural Science</li>
+              <li type="disc">Psychology</li>
+              <li type="disc">Mental Health</li>
+              <li type="disc">Cognitive Neuroscience</li>
+              <li type="disc">Autism Spectrum Disorders</li>
+              <li type="disc">Mind Science, & Counselling</li>
+              <li type="disc">Peace & Conflict Analysis</li>
+              <li type="disc">Addiction: Prevention & Treatment</li>
             </ul>
           </div>
         </div>
@@ -432,17 +432,17 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px]  leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base  leading-9 h-[70px] mt-1">
             Travel, Tourism, Food, & Fashion
           </div>
-          <div className=" sm:text-[16px] text-[14px]">
+          <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li>Hospitality Management</li>
-              <li>Event Management</li>
-              <li>Hotel & Resort Management</li>
-              <li>Patisserie</li>
-              <li>Aviation Management</li>
-              <li>Fashion & Textile Managemetn</li>
+              <li type="disc">Hospitality Management</li>
+              <li type="disc">Event Management</li>
+              <li type="disc">Hotel & Resort Management</li>
+              <li type="disc">Patisserie</li>
+              <li type="disc">Aviation Management</li>
+              <li type="disc">Fashion & Textile Managemetn</li>
             </ul>
           </div>
         </div>
@@ -455,18 +455,18 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px]  leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base  leading-9 h-[70px] mt-1">
             Aviation
           </div>
-          <div className=" sm:text-[16px] text-[14px]">
+          <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li>Aviation</li>
-              <li>Student Pilot License</li>
-              <li>Commercial Pilot License</li>
-              <li>Aircraft Maintenance Engineering</li>
-              <li>Aerospace</li>
-              <li>Airline & Airport Management</li>
-              <li>Airport Transport Management</li>
+              <li type="disc">Aviation</li>
+              <li type="disc">Student Pilot License</li>
+              <li type="disc">Commercial Pilot License</li>
+              <li type="disc">Aircraft Maintenance Engineering</li>
+              <li type="disc">Aerospace</li>
+              <li type="disc">Airline & Airport Management</li>
+              <li type="disc">Airport Transport Management</li>
             </ul>
           </div>
         </div>
@@ -479,18 +479,18 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px]  leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base  leading-9 h-[70px] mt-1">
             Pharmacy
           </div>
-          <div className=" sm:text-[16px] text-[14px]">
+          <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li>Pharmacology</li>
-              <li>Pharmaceutical Science</li>
-              <li>Toxicology</li>
-              <li>OSPAP</li>
-              <li>Drug Development</li>
-              <li>Cancer Pharmacology</li>
-              <li>Cellular Pharmacology</li>
+              <li type="disc">Pharmacology</li>
+              <li type="disc">Pharmaceutical Science</li>
+              <li type="disc">Toxicology</li>
+              <li type="disc">OSPAP</li>
+              <li type="disc">Drug Development</li>
+              <li type="disc">Cancer Pharmacology</li>
+              <li type="disc">Cellular Pharmacology</li>
             </ul>
           </div>
         </div>
@@ -503,20 +503,20 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] sm:text-[25px] text-[22px]   leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base   leading-9 h-[70px] mt-1">
             Engineering
           </div>
-          <div className=" sm:text-[16px] text-[14px]">
+          <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li>Mining Engineering</li>
-              <li>Petroleum Engineering</li>
-              <li>Chemical Engineering</li>
-              <li>Mechanical Engineering</li>
-              <li>Electrical Engineering</li>
-              <li>Civil Engineering</li>
-              <li>Environmental Engineering</li>
-              <li>Computer Science</li>
-              <li>Marine Engineering</li>
+              <li type="disc">Mining Engineering</li>
+              <li type="disc">Petroleum Engineering</li>
+              <li type="disc">Chemical Engineering</li>
+              <li type="disc">Mechanical Engineering</li>
+              <li type="disc">Electrical Engineering</li>
+              <li type="disc">Civil Engineering</li>
+              <li type="disc">Environmental Engineering</li>
+              <li type="disc">Computer Science</li>
+              <li type="disc">Marine Engineering</li>
             </ul>
           </div>
         </div>
