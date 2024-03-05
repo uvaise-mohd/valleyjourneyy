@@ -39,7 +39,7 @@ const Header = () => {
     }
   };
 
-  return (
+  return ( 
     <nav
       className={`flex justify-between sm:pt-2 pt-6  items-center sticky top-0 z-20 sm:px-24 px-4 bg-white ${libreBaskerville.className}`}
     >
@@ -60,7 +60,7 @@ const Header = () => {
       </div>
 
       <div className="flex gap-2 items-center   ">
-        <button className="sm:text-lg xl:text-xl text-base text-[#2A36AC] border-2 border-solid divide-black rounded-xl p-1 lg:p-2   ">
+        <button className="sm:text-lg  text-base text-[#2A36AC] border-2 border-solid divide-black rounded-xl p-1 lg:p-2   ">
           Talk To Us
         </button>
         <div className="menubar flex items-center" onClick={menuIcon}>

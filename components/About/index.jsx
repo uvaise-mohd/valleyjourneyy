@@ -27,12 +27,12 @@ const About = () => {
   return (
     <div className=" pt-20 pb-5  bg-[#E9F7DC]">
       <div
-        className={`text-[#083C82] text-center font-bold pb-2 lg:text-lg xl:text-xl text-base  ${libreBaskerville.className}  `}
+        className={`text-[#083C82] text-center font-bold pb-2 lg:text-[20px] xl:text-[22px] text-base  ${libreBaskerville.className}  `}
       >
         About Valley Journey
       </div>
       <div
-        className={`px-4 lg:text-[14px] xl:text-[16px]  md:justify-center md:pb-5 md:px-36 items-center text-center  ${aleo.className}`}
+        className={`px-4 lg:text-[16px] xl:text-[18px] text-[15px]  md:justify-center md:pb-5 md:px-36 items-center text-center  ${aleo.className}`}
       >
         Valley Journey is the ultimate destination for overseas education
         aspirants to start their preparation and application process. We are a

@@ -37,71 +37,71 @@ const trochhi  = Trocchi({
 const GlobalCommunity = () => {
   return (
     <div className="pb-10 pt-16">
-      <div className={` text-center font-bold md:text-[25px] text-[#083C82] pb-1 lg:text-lg xl:text-xl  ${libreBaskerville.className}`}>Join the global community!</div>
-      <div className={` text-center lg:text-[17px] text-base text-[#413F4D] pb-5 md:px-48  sm:px-24 px-7 ${aleo.className}`}>
+      <div className={` text-center font-bold md:text-[25px] text-[#083C82] pb-1 lg:text-[20px] xl:text-[22px] text-base ${libreBaskerville.className}`}>Join the global community!</div>
+      <div className={` text-center lg:text-[20px] xl:text-[22px] text-base text-[#413F4D] pb-5 md:px-48  sm:px-24 px-7 ${aleo.className}`}>
         Be it North America, Europe or Asia, we are with you throughout until<br/>
         you get there and even further
       </div>
       <div className={`grid lg:grid-rows-3 lg:grid-cols-5 pb-5 gap-4  md:px-32 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 px-4 ${trochhi.className}`} >
         <div>
             <Image src={canada} alt="canada" className="border-2 border-solid  divide-black rounded-xl" />
-            <div className="text-center text-[#083C82]">canada</div>
+            <div className="lg:text-[20px] xl:text-[22px] text-base text-center text-[#083C82] ">canada</div>
         </div>
         <div>
             <Image src={uk} alt="canada" className="border-2 border-solid  divide-black rounded-xl" />
-            <div className="text-center text-[#083C82]">UK</div>
+            <div className="lg:text-[20px] xl:text-[22px] text-base text-center text-[#083C82]">UK</div>
         </div>
         <div>
             <Image src={aus} alt="canada" className="border-2 border-solid  divide-black rounded-xl" />
-            <div className="text-center text-[#083C82]">Australia</div>
+            <div className="lg:text-[20px] xl:text-[22px] text-base text-center text-[#083C82]">Australia</div>
         </div>
         <div>
             <Image src={nz} alt="canada" className="border-2 border-solid  divide-black rounded-xl" />
-            <div className="text-center text-[#083C82]">New Zealand</div>
+            <div className="lg:text-[20px] xl:text-[22px] text-base text-center text-[#083C82]">New Zealand</div>
         </div>
         <div>
             <Image src={ireland} alt="canada" className="border-2 border-solid  divide-black rounded-xl" />
-            <div className="text-center text-[#083C82]">Ireland</div>
+            <div className="lg:text-[20px] xl:text-[22px] text-base text-center text-[#083C82]">Ireland</div>
         </div>
         <div>
             <Image src={us} alt="canada" className="border-2 border-solid  divide-black rounded-xl" />
-            <div className="text-center text-[#083C82]">US</div>
+            <div className="lg:text-[20px] xl:text-[22px] text-base text-center text-[#083C82]">US</div>
         </div>
         <div>
             <Image src={france} alt="canada" className="border-2 border-solid  divide-black rounded-xl" />
-            <div className="text-center text-[#083C82]">France</div>
+            <div className="lg:text-[20px] xl:text-[22px] text-base text-center text-[#083C82]">France</div>
         </div>
         <div>
             <Image src={germany} alt="canada" className="border-2 border-solid  divide-black rounded-xl" />
-            <div className="text-center text-[#083C82]">Germany</div>
+            <div className="lg:text-[20px] xl:text-[22px] text-base text-center text-[#083C82]">Germany</div>
         </div>
         <div>
             <Image src={sweden} alt="canada" className="border-2 border-solid  divide-black rounded-xl" />
-            <div className="text-center text-[#083C82]">Sweden</div>
+            <div className="lg:text-[20px] xl:text-[22px] text-base text-center text-[#083C82]">Sweden</div>
         </div>
         <div>
             <Image src={austria} alt="canada" className="border-2 border-solid  divide-black rounded-xl" />
-            <div className="text-center text-[#083C82]">Austria</div>
+            <div className="lg:text-[20px] xl:text-[22px] text-base text-center text-[#083C82]">Austria</div>
         </div>
         <div>
             <Image src={netherlands} alt="canada" className="border-2 border-solid  divide-black rounded-xl" />
-            <div className="text-center text-[#083C82]">Netherlands</div>
+            <div className="lg:text-[20px] xl:text-[22px] text-base text-center text-[#083C82]">Netherlands</div>
         </div>
         <div>
             <Image src={lithuania} alt="canada" className="border-2 border-solid  divide-black rounded-xl" />
-            <div className="text-center text-[#083C82]">Lithuania</div>
+            <div className="lg:text-[20px] xl:text-[22px] text-base text-center text-[#083C82]">Lithuania</div>
         </div>
         <div>
             <Image src={denmark} alt="canada" className="border-2 border-solid  divide-black rounded-xl" />
-            <div className="text-center text-[#083C82]">Denmark</div>
+            <div className="lg:text-[20px] xl:text-[22px] text-base text-center text-[#083C82]">Denmark</div>
         </div>
         <div>
             <Image src={finland} alt="canada" className="border-2 border-solid  divide-black rounded-xl" />
-            <div className="text-center text-[#083C82]">Finland</div>
+            <div className="lg:text-[20px] xl:text-[22px] text-base text-center text-[#083C82]">Finland</div>
         </div>
         <div>
             <Image src={singapore} alt="canada" className="border-2 border-solid  divide-black rounded-xl" />
-            <div className="text-center text-[#083C82]">Singapore</div>
+            <div className="lg:text-[20px] xl:text-[22px] text-base text-center text-[#083C82]">Singapore</div>
         </div>
         
      

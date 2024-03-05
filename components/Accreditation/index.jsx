@@ -14,12 +14,12 @@ const Accreditation = () => {
     <div className=" pb-10">
       <div className={libreBaskerville.className}>
         <div className="flex justify-center md:px-20 px-4">
-          <div className=" inline-block font-bold lg:text-[17px] xl:text-[19px] text-[#083C82] text-center border border-[#0B4715] rounded-[40px] py-3 px-5 mb-4">
+          <div className=" inline-block font-bold lg:text-[21px] xl:text-[23px] text-xl text-[#083C82] text-center border border-[#0B4715] rounded-[40px] py-3 px-5 mb-4">
             Accreditation - Levels of Education
           </div>
         </div>
 
-        <div className="lg:text-base text-[15px] text-[#083C82] text-center pb-7 md:px-32 px-4 ">
+        <div className="lg:text-[19px] xl:text-[21px] text-[15px] text-[#083C82] text-center pb-7 md:px-32 px-4 ">
           Whether you just completed your 10th grade or you are working
           professional with a postgraduate degree, we have options for you to
           select the appropriate level of education for your further studies

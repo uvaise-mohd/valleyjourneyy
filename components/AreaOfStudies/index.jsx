@@ -33,7 +33,7 @@ const AreaOfStudies = () => {
   return (
     <div className="pt-10">
       <div className={`pb-10 ${libreBaskerville.className}`}>
-        <div className="md:text-[38px] sm:text-[32px] text-[26px] text-[#867021] text-center bg-[#E3F5FF] font-bold">
+        <div className="lg:text-[28px] xl:text-[34px]  text-[20px] text-[#867021] text-center bg-[#E3F5FF] font-bold py-2">
           Areas of Studies
         </div>
       </div>
@@ -48,7 +48,7 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
             Agriculture
           </div>
           <div className=" sm:text-[12px] xl:text-[14px]">
@@ -70,7 +70,7 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
             Food Science
           </div>
           <div className="  sm:text-[12px] xl:text-[14px]">
@@ -94,7 +94,7 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
             Environment & Climate
           </div>
           <div className="  sm:text-[12px] xl:text-[14px] flex">
@@ -118,7 +118,7 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
             Disaster Managemet
           </div>
           <div className="  sm:text-[12px] xl:text-[14px]">
@@ -142,7 +142,7 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
             Architecture & Construction
           </div>
           <div className="  sm:text-[12px] xl:text-[14px]">
@@ -166,7 +166,7 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
             Art & Theatre
           </div>
           <div className="  sm:text-[12px] xl:text-[14px]">
@@ -177,8 +177,7 @@ const AreaOfStudies = () => {
               <li type="disc"> Media & Film Production </li>
               <li type="disc">Music & Performing Arts</li>
               <li type="disc"> Screen Writing</li>
-              Media Management
-              <li type="disc"> </li>
+              <li type="disc"> Media Management</li>
             </ul>
           </div>
         </div>
@@ -191,7 +190,7 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
             Design, Video & Photography
           </div>
           <div className="  sm:text-[12px] xl:text-[14px]">
@@ -214,7 +213,7 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base  leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
             IT & ComputerScience
           </div>
           <div className="  sm:text-[12px] xl:text-[14px]">
@@ -239,7 +238,7 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base  leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
             Journalism
           </div>
           <div className="  sm:text-[12px] xl:text-[14px]">
@@ -262,7 +261,7 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base  leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
             Automobile
           </div>
           <div className="  sm:text-[12px] xl:text-[14px]">
@@ -286,7 +285,7 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base  leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
             Education
           </div>
           <div className="  sm:text-[12px] xl:text-[14px]">
@@ -309,7 +308,7 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base  leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
             Business
           </div>
           <div className="  sm:text-[12px] xl:text-[14px]">
@@ -335,7 +334,7 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base  leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
             Finance, Banking & Investment
           </div>
           <div className="  sm:text-[12px] xl:text-[14px]">
@@ -359,7 +358,7 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base  leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
             Health & Welbeing
           </div>
           <div className="  sm:text-[12px] xl:text-[14px]">
@@ -385,7 +384,7 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base  leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
             Animals
           </div>
           <div className="  sm:text-[12px] xl:text-[14px]">
@@ -407,7 +406,7 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base  leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
             Social & Behavioral Science
           </div>
           <div className="  sm:text-[12px] xl:text-[14px]">
@@ -432,7 +431,7 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base  leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
             Travel, Tourism, Food, & Fashion
           </div>
           <div className="  sm:text-[12px] xl:text-[14px]">
@@ -455,7 +454,7 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base  leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
             Aviation
           </div>
           <div className="  sm:text-[12px] xl:text-[14px]">
@@ -479,7 +478,7 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base  leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
             Pharmacy
           </div>
           <div className="  sm:text-[12px] xl:text-[14px]">
@@ -503,7 +502,7 @@ const AreaOfStudies = () => {
               className="rounded-[50%] h-[180px] w-[180px]"
             />
           </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-lg xl:text-xl text-base   leading-9 h-[70px] mt-1">
+          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base   leading-9 h-[70px] mt-1">
             Engineering
           </div>
           <div className="  sm:text-[12px] xl:text-[14px]">

@@ -28,14 +28,18 @@ const Footer = () => {
   return (
     <div className=" ">
       <div className="bg-[#000125] text-white py-3 ">
-        <div
-          className={`flex justify-center md:text-3xl sm:text-[25px] text-[20px] pb-4 ${belleza.className}`}
-        >
-          Please Type
+
+ 
+        <div className="flex justify-center mb-3 " >
+          <div
+            className={` lg:text-[28px] xl:text-[34px] text-[20px]  footer-border inline-block    ${belleza.className}` }
+          >
+            Please Type
+          </div>
         </div>
 
         <div
-          className={`md:text-xl sm:text-lg text-base flex sm:flex-row flex-col sm:justify-between text-center justify-center pb-8  sm:px-20 md:px-32  px-4 ${cardo.className}`}
+          className={`lg:text-xl xl:text-[22px] text-base flex sm:flex-row flex-col sm:justify-between text-center justify-center pb-8  sm:px-20 md:px-32  px-4 ${cardo.className}`}
         >
           <div>Preferred Country</div>
           <div>Preferred Area of Studies</div>
@@ -43,7 +47,7 @@ const Footer = () => {
         </div>
 
         <div
-          className={` sm:text-lg text-base  text-center pb-8 ${belleza.className}`}
+          className={` lg:text-[19px] xl:text-[21px] text-base  text-center pb-8 ${belleza.className}`}
         >
           We will call you instantly!
         </div>
@@ -53,7 +57,7 @@ const Footer = () => {
         </div>
 
         <div
-          className={`flex sm:flex-row flex-col gap-4 sm:justify-between sm:text-sm text-xs lg:px-28 md:px-20 sm:px-12 ${libreBaskerville.className}`}
+          className={`flex sm:flex-row flex-col gap-4 sm:justify-between lg:text-lg xl:text-xl text-base lg:px-28 md:px-20 sm:px-12 ${libreBaskerville.className}`}
         >
           <div className="sm:flex sm:justify-start">
             <div className=" sm:text-start text-center">
@@ -82,13 +86,7 @@ const Footer = () => {
 
               <div className="flex flex-row sm:gap-2 gap-1 sm:justify-between justify-center items-center ">
                 <div>
-                  <Image
-                    src={fb}
-                    alt="fb"
-                    height={40}
-                    width={40}
-                    className=""
-                  />
+                  <Image src={fb} alt="fb" height={45} width={45} />
                 </div>
                 <div>
                   <Image src={instagram} height={50} width={50} alt="fb" />
@@ -117,10 +115,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className={`${belleza.className} bg-[#224039] items-center flex flex-row justify-center gap-2 px-4 py-2 text-white`}>
+      <div
+        className={`${belleza.className} bg-[#3D514D] items-center flex flex-row justify-center gap-2 px-4 py-2 text-white`}
+      >
         <div></div>
         <div className=" text-lg text-center ">
-           2024 Valley Journey Overseas Education LLP : All rights reserved       
+          2024 Valley Journey Overseas Education LLP : All rights reserved
         </div>
       </div>
     </div>

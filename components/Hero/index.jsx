@@ -35,19 +35,22 @@ const Hero = () => {
       <div className="sm:px-24 px-4">
         <div className="flex lg:flex-row flex-col justify-between pt-3">
           <div className="flex flex-col justify-center">
-            <div className={`text-[#083C82]  lg:text-[20px] xl:text-[28px] text-lg   font-bold xl:leading-10 ${libreBaskerville.className}`}>
-              <div>Travel and explore your</div>
+            <div className={`hero-heading1 text-[#083C82]  lg:text-[22px] xl:text-[28px] text-lg  font-bold xl:leading-10 ${libreBaskerville.className}`}>
+              {/* <div>Travel and explore your</div>
               <div>favourite country as an </div>
-              <div> international student</div>
+              <div> international student</div> */}
+                 <div>Travel and explore your
+              favourite country as an 
+              international student</div>
             </div>
-            <div className={`text-[#2B202A] lg:text-[16px] xl:text-lg text-base  font-bold ${aleo.className}`}>
+            <div className={`hero-heading2 text-[#2B202A] text-base font-bold ${aleo.className}`}>
               <div>Over fifteen countries across the world to study in!
                Enjoy a new lease of life through Valley Journey.</div>
             </div>
           </div>
 
           <div className=" mb-[15px]">
-            <Image src={hero} height={1600} width={1400} alt="hero-inage" />
+            <Image src={hero} height={1600} width={1400} alt="hero-image" />
           </div>
         </div>
       </div>
