@@ -45,7 +45,7 @@ const Header = () => {
     >
       <div className="flex items-center lg:gap-2 xl:gap-3 2xl:gap-4">
         <div>
-          <Image src={logo} alt="logo" className="" height={160} width={160} />
+          <Image src={logo} alt="logo" className=" w-[170px] h-[59px] main-logo-below365 "  />
         </div>
         <div>
           <ul className=" navlinks navsetup duration-500 flex  flex-col absolute  top-[-800%] left-0 bg-white w-full widthsetup  gap-12 items-start py-10  text-sm px-4 xl:gap-6 2xl:gap-7 ">
@@ -60,7 +60,7 @@ const Header = () => {
       </div>
 
       <div className="flex gap-2 items-center   ">
-        <button className="sm:text-lg  text-base text-[#2A36AC] border-2 border-solid divide-black rounded-xl p-1 lg:p-2   ">
+        <button className="sm:text-lg  text-base talktous-below365 text-[#2A36AC] border-2 border-solid divide-black rounded-xl px-1 sm:px-2 py-1    ">
           Talk To Us
         </button>
         <div className="menubar flex items-center" onClick={menuIcon}>

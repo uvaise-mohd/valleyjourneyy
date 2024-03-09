@@ -38,7 +38,7 @@ const GlobalCommunity = () => {
   return (
     <div className="pb-10 pt-16">
       <div className={` text-center font-bold md:text-[25px] text-[#083C82] pb-1 lg:text-[20px] xl:text-[22px] text-base ${libreBaskerville.className}`}>Join the global community!</div>
-      <div className={` text-center lg:text-[20px] xl:text-[22px] text-base text-[#413F4D] pb-5 md:px-48  sm:px-24 px-7 ${aleo.className}`}>
+      <div className={` text-center lg:text-[20px] xl:text-[22px] text-base text-[#413F4D] pb-5 md:px-44  sm:px-24 px-7 ${aleo.className}`}>
         Be it North America, Europe or Asia, we are with you throughout until<br/>
         you get there and even further
       </div>

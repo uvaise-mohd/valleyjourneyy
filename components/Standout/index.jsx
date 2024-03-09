@@ -44,7 +44,7 @@ const Standout = () => {
   return (
     <div>
       <div className={` bg-[#CCFACF]  ${aleo.className}`}>
-        <div className=" lg:text-[28px] xl:text-[34px]  text-[20px] text-center font-bold uppercase text-[#184420] sm:px-36 lg:px-44 px-4 py-7">
+        <div className=" lg:text-[28px] xl:text-[34px]  text-[20px] text-center font-bold uppercase text-[#184420] sm:px-36 lg:px-60 xl:px-80 px-4 py-7">
           what makes Valley Journey stand out!
         </div>
         <div className="flex justify-center">
@@ -107,7 +107,7 @@ const Standout = () => {
         </div>
 
         <div
-          className={`lg:text-xl xl:text-[22px] text-[16px] text-center   md:px-48  sm:px-24 px-4  py-7  ${trocchi.className}`}
+          className={`lg:text-xl xl:text-[22px] text-[16px] text-center   md:px-48 xl:px-64 sm:px-24 px-4  py-7  ${trocchi.className}`}
         >
           “Deep in our hearts, we know that every student and their parents come
           to us with lots of hope and dreams.”

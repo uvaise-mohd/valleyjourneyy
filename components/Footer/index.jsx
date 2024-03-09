@@ -30,9 +30,9 @@ const Footer = () => {
       <div className="bg-[#000125] text-white py-3 ">
 
  
-        <div className="flex justify-center mb-3 ">
+        <div className=" text-center mb-3  ">
           <div
-            className={` lg:text-[28px] xl:text-[34px] text-[20px]  inline-block  footer-border   ${belleza.className}` }
+            className={` lg:text-[28px] xl:text-[34px] text-[20px]  inline-block   w-[300px] footer-border  ${belleza.className}` }
           >
             Please Type
           </div>
@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
 
         <div
-          className={`flex sm:flex-row flex-col gap-4 sm:justify-between lg:text-lg xl:text-xl text-base lg:px-28 md:px-20 sm:px-12 ${libreBaskerville.className}`}
+          className={`flex sm:flex-row flex-col gap-4 sm:justify-between lg:text-base xl:text-lg text-sm lg:px-28 md:px-20 sm:px-12 ${libreBaskerville.className}`}
         >
           <div className="sm:flex sm:justify-start">
             <div className=" sm:text-start text-center">

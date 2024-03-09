@@ -25,7 +25,7 @@ const lora = Lora({
 
 const About = () => {
   return (
-    <div className=" pt-20 pb-5  bg-[#E9F7DC]">
+    <div className=" pt-16 pb-7  bg-[#E9F7DC]">
       <div
         className={`text-[#083C82] text-center font-bold pb-2 lg:text-[20px] xl:text-[22px] text-base  ${libreBaskerville.className}  `}
       >
