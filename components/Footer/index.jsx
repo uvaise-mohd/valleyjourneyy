@@ -57,9 +57,9 @@ const Footer = () => {
         </div>
 
         <div
-          className={`flex sm:flex-row flex-col gap-4 sm:justify-between lg:text-base xl:text-lg text-sm lg:px-28 md:px-20 sm:px-12 ${libreBaskerville.className}`}
+          className={`grid sm:grid-cols-3 grid-cols-1 gap-4  lg:text-base xl:text-lg text-sm lg:px-28 md:px-20 sm:px-12 ${libreBaskerville.className}`}
         >
-          <div className="sm:flex sm:justify-start">
+          <div className="">
             <div className=" sm:text-start text-center">
               <div>Countries</div>
               <div>Courses</div>
@@ -70,7 +70,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="sm:flex sm:justify-center">
+          <div className="">
             <div className=" text-center">
               <div className="pb-5">
                 <div>KC Tower, Manjeri Road</div>
@@ -101,7 +101,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="sm:flex sm:justify-end">
+          <div className="">
             <div className=" sm:text-end text-center">
               <div>Opening Hours</div>
               <div>
