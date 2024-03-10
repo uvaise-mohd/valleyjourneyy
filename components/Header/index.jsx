@@ -45,7 +45,7 @@ const Header = () => {
     >
       <div className="flex items-center lg:gap-2 xl:gap-3 2xl:gap-4">
         <div>
-          <Image src={logo} alt="logo" className=" w-[170px] h-[59px] main-logo-below365 "  />
+          <Image src={logo} alt="logo" className=" w-[165px] h-[54px] main-logo-below365 "  />
         </div>
         <div>
           <ul className=" navlinks navsetup duration-500 flex  flex-col absolute  top-[-800%] left-0 bg-white w-full widthsetup  gap-12 items-start py-10  text-sm px-4 xl:gap-6 2xl:gap-7 ">

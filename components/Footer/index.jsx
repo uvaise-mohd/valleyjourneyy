@@ -2,8 +2,8 @@ import Image from "next/image";
 import React from "react";
 import logo from "../../public/images/svg/footerlogo.svg";
 import { Belleza, Cardo, Libre_Baskerville } from "next/font/google";
-import fb from "../../public/images/svg/socialmedia/facebook.svg";
-import instagram from "../../public/images/socialMedia/instagram.png";
+import fb from "../../public/images/svg/socialmedia/fb.svg";
+import insta from "../../public/images/svg/socialmedia/insta.svg";
 import twitter from "../../public/images/svg/socialmedia/twitter.svg";
 import youtube from "../../public/images/socialMedia/youtube.png";
 
@@ -27,7 +27,7 @@ const libreBaskerville = Libre_Baskerville({
 const Footer = () => {
   return (
     <div className=" ">
-      <div className="bg-[#000125] text-white py-3 ">
+      <div className="bg-[#000125] text-white py-4 ">
 
  
         <div className=" text-center mb-3  ">
@@ -85,11 +85,11 @@ const Footer = () => {
               </div>
 
               <div className="flex flex-row sm:gap-2 gap-1 sm:justify-between justify-center items-center ">
-                <div>
-                  <Image src={fb} alt="fb" height={45} width={45} />
+                <div className="text-white" >
+                  <Image src={fb} alt="fb" height={45} width={45}  />
                 </div>
                 <div>
-                  <Image src={instagram} height={50} width={50} alt="fb" />
+                  <Image src={insta} height={50} width={50} alt="fb" />
                 </div>
                 <div>
                   <Image src={youtube} height={70} width={70} alt="fb" />

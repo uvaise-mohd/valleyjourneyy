@@ -1,7 +1,8 @@
 import React from "react";
 import { Libre_Baskerville, Lora } from "next/font/google";
 import Image from "next/image";
-import studystories from "../../public/images/svg/studentstories/studystories.svg";
+import studystoriess from "../../public/images/svg/studentstories/studystoriess.svg";
+import dots from "../../public/images/svg/studentstories/3dots.svg"
 
 const libreBaskerville = Libre_Baskerville({
   weight: "700", // if single weight, otherwise you use array like [400, 500, 700],
@@ -28,7 +29,7 @@ const StudentStories = () => {
 
       <div className="flex lg:flex-row flex-col items-center  sm:px-32 px-4 ">
         <div className="mb-6">
-          <Image src={studystories} alt="studystories" height={70} width={70} />
+          <Image src={studystoriess} alt="studystories" height={70} width={70} />
         </div>
 
         <div>
@@ -127,7 +128,10 @@ const StudentStories = () => {
           </div>
         </div>
       </div>
-      <div className="my-7">
+      <div className="flex justify-center">
+        <Image src={dots}  className="w-[150px] "/>
+      </div>
+      <div className="mb-7">
         <div className=" bg-[#E3F5FF] py-5"></div>
       </div>
     </div>

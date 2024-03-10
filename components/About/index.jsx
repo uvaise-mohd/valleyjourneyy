@@ -4,6 +4,8 @@ import { TiTick } from "react-icons/ti";
 import { Aleo, Lora, Libre_Baskerville } from "next/font/google";
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import tick from "../../public/others/tick.json";
+import Image from "next/image";
+import aboutTick from "../../public/images/svg/aboutTick.svg";
 
 const libreBaskerville = Libre_Baskerville({
   weight: "700", // if single weight, otherwise you use array like [400, 500, 700],
@@ -45,14 +47,9 @@ const About = () => {
         className={`md:flex md:flex-row md:justify-between md:px-32 md:gap-5 md:pb-5 ${lora.className} sm: flex-col sm:px-24 sm:pb-3 px-4`}
       >
         <div className="sm:flex sm:flex-row sm:gap-5">
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col items-center">
             <div>
-              <Player autoplay loop src={tick} className="md:h-[100px] md:w-[100px] h-[70px] w-[70px] ">
-                <Controls
-                  visible={false}
-                  buttons={["play", "repeat", "frame", "debug"]}
-                />
-              </Player>
+              <Image src={aboutTick} className="h-[100px] w-[50px]" />
             </div>
             <div className="lg:text-[14px] xl:text-[16px]  text-center">
               A new institute with modern infrastructure and an experienced
@@ -60,14 +57,9 @@ const About = () => {
             </div>
           </div>
 
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col  items-center">
             <div>
-              <Player autoplay loop src={tick} className="md:h-[100px] md:w-[100px] h-[70px] w-[70px] ">
-                <Controls
-                  visible={false}
-                  buttons={["play", "repeat", "frame", "debug"]}
-                />
-              </Player>
+              <Image src={aboutTick} className="h-[100px] w-[50px]" />
             </div>
             <div className="lg:text-[14px] xl:text-[16px]  text-center">
               We offer genuine and up-to-date information on studies in foreign
@@ -77,14 +69,9 @@ const About = () => {
         </div>
 
         <div className="sm:flex sm:flex-row sm:gap-5 ">
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-1 items-center">
             <div>
-              <Player autoplay loop src={tick} className="md:h-[100px] md:w-[100px] h-[70px] w-[70px] ">
-                <Controls
-                  visible={false}
-                  buttons={["play", "repeat", "frame", "debug"]}
-                />
-              </Player>
+              <Image src={aboutTick} className="h-[100px] w-[50px]" />
             </div>
             <div className=" lg:text-[14px] xl:text-[16px]  text-center">
               We Assess the students’ skills and prepare them to pursue their
@@ -92,14 +79,9 @@ const About = () => {
             </div>
           </div>
 
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col  items-center">
             <div>
-              <Player autoplay loop src={tick} className="md:h-[100px] md:w-[100px] h-[70px] w-[70px] ">
-                <Controls
-                  visible={false}
-                  buttons={["play", "repeat", "frame", "debug"]}
-                />
-              </Player>
+              <Image src={aboutTick} className="h-[100px] w-[50px]" />
             </div>
             <div className=" lg:text-[14px] xl:text-[16px]   text-center">
               Our institute provides a wide range of training sessions and a
