@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import logo from "../../public/images/svg/footerlogo.svg";
 import { Belleza, Cardo, Libre_Baskerville } from "next/font/google";
-import fb from "../../public/images/svg/socialmedia/fb.svg";
+import fb from "../../public/images/svg/socialmedia/facebook.svg";
 import insta from "../../public/images/svg/socialmedia/insta.svg";
 import twitter from "../../public/images/svg/socialmedia/twitter.svg";
 import youtube from "../../public/images/socialMedia/youtube.png";
@@ -85,8 +85,8 @@ const Footer = () => {
               </div>
 
               <div className="flex flex-row sm:gap-2 gap-1 sm:justify-between justify-center items-center ">
-                <div className="text-white" >
-                  <Image src={fb} alt="fb" height={45} width={45}  />
+                <div className="text-white mb-1" >
+                  <Image src={fb} alt="fb" height={40} width={40}  />
                 </div>
                 <div>
                   <Image src={insta} height={50} width={50} alt="fb" />
