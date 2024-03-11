@@ -22,7 +22,7 @@ const Institutes = () => {
         Universities, Colleges and Polytechniques
       </div>
       <div
-        className={`lg:text-xl xl:text-[22px] text-[16px] text-center lg:px-52 md:px-[600px]  pb-7 ${lora.className}`}
+        className={`lg:text-xl xl:text-[22px] text-[16px] text-center lg:px-52 md:px-80 px-4 pb-7 ${lora.className}`}
       >
         Both university and location can contribute to a student’s academic
         development - We always recommend welcoming and vibrant locations that
