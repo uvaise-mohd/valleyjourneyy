@@ -38,7 +38,7 @@ const AreaOfStudies = () => {
         </div>
       </div>
       <div
-        className={`grid lg:grid-rows-5 lg:grid-cols-4 sm:px-20 gap-7 pb-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:px-32 px-4 ${libreBaskerville.className} `}
+        className={`grid lg:grid-rows-5 lg:grid-cols-4 sm:px-20 gap-7 pb-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:px-44 px-4 ${libreBaskerville.className} `}
       >
         <div className=" flex flex-col items-center text-center lg:gap-3 md:gap-2 gap-1 pb-2">
           <div>

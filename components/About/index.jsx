@@ -34,8 +34,9 @@ const About = () => {
         About Valley Journey
       </div>
       <div
-        className={`px-4 lg:text-[16px] xl:text-[18px] text-[15px]  md:justify-center md:pb-5 md:px-36 items-center text-center  ${aleo.className}`}
+        className={`px-4 lg:text-[16px] xl:text-[18px] text-[15px]  md:justify-center md:pb-5 md:px-[200px]  items-center text-center  ${aleo.className}`}
       >
+        {/* md:px-above 48 and below 52 */}
         Valley Journey is the ultimate destination for overseas education
         aspirants to start their preparation and application process. We are a
         small group of experts offering honest and comprehensive guidance on and
@@ -44,7 +45,7 @@ const About = () => {
         atmosphere.
       </div>
       <div
-        className={`md:flex md:flex-row md:justify-between md:px-32 md:gap-5 md:pb-5 ${lora.className} sm: flex-col sm:px-24 sm:pb-3 px-4`}
+        className={`md:flex md:flex-row md:justify-between md:px-48 md:gap-5 md:pb-5 ${lora.className} sm: flex-col sm:px-24 sm:pb-3 px-4`}
       >
         <div className="sm:flex sm:flex-row sm:gap-5">
           <div className="flex flex-col items-center">

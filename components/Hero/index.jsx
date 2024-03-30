@@ -32,7 +32,7 @@ const Hero = () => {
   }, []); 
   return (
     <div className="min-h-[65vh] lg:min-h-[30vh]"> 
-      <div className="sm:px-24 px-4">
+      <div className="sm:px-32 px-4">
         <div className="flex lg:flex-row flex-col justify-between pt-3">
           <div className="flex flex-col justify-center" >
             <div className={`hero-heading1 text-[#083C82]  lg:text-[22px] xl:text-[28px] text-lg  font-bold xl:leading-10 ${libreBaskerville.className}`}>

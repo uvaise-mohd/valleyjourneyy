@@ -19,14 +19,14 @@ const Accreditation = () => {
           </div>
         </div>
 
-        <div className="lg:text-[19px] xl:text-[21px] text-[15px] text-[#083C82] text-center pb-7 md:px-32 px-4 ">
+        <div className="lg:text-[19px] xl:text-[21px] text-[15px] text-[#083C82] text-center pb-7 md:px-44 px-4 ">
           Whether you just completed your 10th grade or you are working
           professional with a postgraduate degree, we have options for you to
           select the appropriate level of education for your further studies
           abroad
         </div>
       </div>
-      <Image src={accreditation} alt="accreditation" className="mx-auto sm:px-20 px-4" />
+      <Image src={accreditation} alt="accreditation" className="mx-auto sm:px-36 px-4" />
     </div>
   );
 };

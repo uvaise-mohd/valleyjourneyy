@@ -41,14 +41,14 @@ const Header = () => {
 
   return ( 
     <nav
-      className={`flex justify-between sm:pt-2 pt-6  items-center sticky top-0 z-20 sm:px-24 px-4 bg-white ${libreBaskerville.className}`}
+      className={`flex justify-between sm:pt-2 pt-6  items-center sticky top-0 z-20 sm:px-32 px-4 bg-white ${libreBaskerville.className}`}
     >
       <div className="flex items-center lg:gap-2 xl:gap-3 2xl:gap-4">
         <div>
           <Image src={logo} alt="logo" className=" w-[165px] h-[54px] main-logo-below365 "  />
         </div>
         <div>
-          <ul className=" navlinks navsetup duration-500 flex  flex-col absolute  top-[-800%] left-0 bg-white w-full widthsetup  gap-12 items-start py-10  text-sm px-4 xl:gap-6 2xl:gap-7 ">
+          <ul className=" navlinks navsetup duration-500 flex  flex-col absolute  top-[-800%] left-0 bg-white w-full widthsetup  gap-6 items-start py-10  text-[12px] xl:text-sm px-4 xl:gap-6 2xl:gap-7 ">
             <Link href={"#"}>Countries</Link>
             <Link href={"#"}>Courses</Link>
             <Link href={"#"}>IELTS</Link>

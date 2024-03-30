@@ -114,7 +114,7 @@ const Standout = () => {
         </div>
       </div>
 
-      <div className="grid lg:grid-cols-4 lg:grid-rows-2 sm:grid-cols-2   sm:px-20 md:px-32  px-4 font-bold gap-2">
+      <div className="grid lg:grid-cols-4 lg:grid-rows-2 sm:grid-cols-2   sm:px-20 md:px-[150px]  px-4 font-bold gap-2">
         <div className="flex flex-col gap-1 items-center text-center">
           <div>
             <Image src={DelayfreeProcessing} alt="" className="h-[150px] w-[150px]" />

@@ -42,7 +42,7 @@ const GlobalCommunity = () => {
         Be it North America, Europe or Asia, we are with you throughout until<br/>
         you get there and even further
       </div>
-      <div className={`grid lg:grid-rows-3 lg:grid-cols-5 pb-5 gap-4  md:px-32 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 px-4 ${trochhi.className}`} >
+      <div className={`grid lg:grid-rows-3 lg:grid-cols-5 pb-5 gap-4  md:px-44 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 px-4 ${trochhi.className}`} >
         <div>
             <Image src={canada} alt="canada" className="border-2 border-solid  divide-black rounded-xl" />
             <div className="lg:text-[20px] xl:text-[22px] text-base text-center text-[#083C82] ">canada</div>

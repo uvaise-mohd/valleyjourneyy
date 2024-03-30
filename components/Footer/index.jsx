@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
 
         <div
-          className={`lg:text-xl xl:text-[22px] text-base flex sm:flex-row flex-col sm:justify-between text-center justify-center pb-8  sm:px-20 md:px-32  px-4 ${cardo.className}`}
+          className={`lg:text-xl xl:text-[22px] text-base flex sm:flex-row flex-col sm:justify-between text-center justify-center pb-8  sm:px-20 md:px-44  px-4 ${cardo.className}`}
         >
           <div>Preferred Country</div>
           <div>Preferred Area of Studies</div>
@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
 
         <div
-          className={`grid sm:grid-cols-3 grid-cols-1 gap-4  lg:text-base xl:text-lg text-sm lg:px-28 md:px-20 sm:px-12 ${libreBaskerville.className}`}
+          className={`grid sm:grid-cols-3 grid-cols-1 gap-4  lg:text-base xl:text-lg text-sm  md:px-[150px] sm:px-12 ${libreBaskerville.className}`}
         >
           <div className="">
             <div className=" sm:text-start text-center">
