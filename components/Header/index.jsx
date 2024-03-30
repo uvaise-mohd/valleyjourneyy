@@ -39,13 +39,17 @@ const Header = () => {
     }
   };
 
-  return ( 
+  return (
     <nav
       className={`flex justify-between sm:pt-2 pt-6  items-center sticky top-0 z-20 sm:px-32 px-4 bg-white ${libreBaskerville.className}`}
     >
       <div className="flex items-center lg:gap-2 xl:gap-3 2xl:gap-4">
         <div>
-          <Image src={logo} alt="logo" className=" w-[165px] h-[54px] main-logo-below365 "  />
+          <Image
+            src={logo}
+            alt="logo"
+            className=" w-[165px] h-[54px] main-logo-below365 "
+          />
         </div>
         <div>
           <ul className=" navlinks navsetup duration-500 flex  flex-col absolute  top-[-800%] left-0 bg-white w-full widthsetup  gap-6 items-start py-10  text-[12px] xl:text-sm px-4 xl:gap-6 2xl:gap-7 ">
@@ -60,9 +64,18 @@ const Header = () => {
       </div>
 
       <div className="flex gap-2 items-center   ">
-        <button className="sm:text-lg  text-base talktous-below365 text-[#2A36AC] border-2 border-solid divide-black rounded-xl px-1 sm:px-2 py-1    ">
+        {/* <button className="sm:text-lg  text-base talktous-below365 text-[#2A36AC] border-2 border-solid divide-black rounded-xl px-1 sm:px-2 py-1    ">
           Talk To Us
-        </button>
+        </button> */}
+        <a
+          href="https://valleyjourney.com/notify.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="sm:text-lg text-base talktous-below365 text-[#2A36AC] border-2 border-solid divide-black rounded-xl px-1 sm:px-2 py-1">
+            Talk To Us
+          </button>
+        </a>
         <div className="menubar flex items-center" onClick={menuIcon}>
           {closeIcon ? (
             <IoClose className=" text-3xl cursor-pointer" />
