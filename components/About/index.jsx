@@ -80,7 +80,7 @@ const About = () => {
               initial="initial"
               animate="animate"
             >
-              <Image src={aboutTick} className="h-[100px] w-[50px]" />
+              <Image alt="about" src={aboutTick} className="h-[100px] w-[50px]" />
             </motion.div>
             <div className="lg:text-[14px] xl:text-[16px]  text-center">
               A new institute with modern infrastructure and an experienced
@@ -99,7 +99,7 @@ const About = () => {
               initial="initial"
               animate="animate"
             >
-              <Image src={aboutTick} className="h-[100px] w-[50px]" />
+              <Image alt="about-tick" src={aboutTick} className="h-[100px] w-[50px]" />
             </motion.div>
             <div className="lg:text-[14px] xl:text-[16px]  text-center">
               We offer genuine and up-to-date information on studies in foreign
@@ -120,7 +120,7 @@ const About = () => {
               initial="initial"
               animate="animate"
             >
-              <Image src={aboutTick} className="h-[100px] w-[50px]" />
+              <Image alt="about-tick" src={aboutTick} className="h-[100px] w-[50px]" />
             </motion.div>
             <div className=" lg:text-[14px] xl:text-[16px]  text-center">
               We Assess the students’ skills and prepare them to pursue their
@@ -139,7 +139,7 @@ const About = () => {
               initial="initial"
               animate="animate"
             >
-              <Image src={aboutTick} className="h-[100px] w-[50px]" />
+              <Image alt="about-tick" src={aboutTick} className="h-[100px] w-[50px]" />
             </motion.div>
             <div className=" lg:text-[14px] xl:text-[16px]   text-center">
               Our institute provides a wide range of training sessions and a

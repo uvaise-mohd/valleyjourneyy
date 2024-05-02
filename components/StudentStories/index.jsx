@@ -246,7 +246,7 @@ const StudentStories = () => {
         </motion.div>
       </div>
       <div className="flex justify-center">
-        <Image src={dots} className="w-[150px] " />
+        <Image alt="dots" src={dots} className="w-[150px] " />
       </div>
       <div className="mb-7">
         <div className=" bg-[#E3F5FF] py-5"></div>
