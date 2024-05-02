@@ -1,12 +1,14 @@
-import React from "react";
+"use client";
+import React, { createContext, useEffect, useRef, useState } from "react";
 import { Libre_Baskerville } from "next/font/google";
 import Image from "next/image";
 import accreditation from "../../public/images/svg/accreditation/accreditationn.svg";
+import { motion } from "framer-motion";
 
 const libreBaskerville = Libre_Baskerville({
   weight: "400", // if single weight, otherwise you use array like [400, 500, 700],
   style: "normal",
-  subsets: ["latin"], 
+  subsets: ["latin"],
 });
 
 const Accreditation = () => {
@@ -14,19 +16,39 @@ const Accreditation = () => {
     <div className=" pb-10">
       <div className={libreBaskerville.className}>
         <div className="flex justify-center md:px-20 px-4">
-          <div className=" inline-block font-bold lg:text-[21px] xl:text-[23px] text-xl text-[#083C82] text-center border border-[#0B4715] rounded-[40px] py-3 px-5 mb-4">
+          <motion.div
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 100 }}
+            transition={{ duration: 0.5 }}
+            className=" inline-block font-bold lg:text-[21px] xl:text-[23px] text-xl text-[#083C82] text-center border border-[#0B4715] rounded-[40px] py-3 px-5 mb-4"
+          >
             Accreditation - Levels of Education
-          </div>
+          </motion.div>
         </div>
 
-        <div className="lg:text-[19px] xl:text-[21px] text-[15px] text-[#083C82] text-center pb-7 md:px-44 px-4 ">
+        <motion.div
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 100 }}
+          transition={{ duration: 0.7 }}
+          className="lg:text-[19px] xl:text-[21px] text-[15px] text-[#083C82] text-center pb-7 md:px-44 px-4 "
+        >
           Whether you just completed your 10th grade or you are working
           professional with a postgraduate degree, we have options for you to
           select the appropriate level of education for your further studies
           abroad
-        </div>
+        </motion.div>
       </div>
-      <Image src={accreditation} alt="accreditation" className="mx-auto sm:px-36 px-4" />
+      <motion.div
+        whileInView={{opacity:1, y:0}}
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 0.7 }}
+      >
+        <Image
+          src={accreditation}
+          alt="accreditation"
+          className="mx-auto sm:px-36 px-4"
+        />
+      </motion.div>
     </div>
   );
 };

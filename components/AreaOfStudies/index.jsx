@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import agriculture from "../../public/images/svg/AreaOfStudies/agriculture.svg";
 import foodandscience from "../../public/images/svg/AreaOfStudies/foodscience.svg";
 import EnvironmentClimate from "../../public/images/svg/AreaOfStudies/enviornmentalclimate.svg";
@@ -22,6 +23,7 @@ import aviation from "../../public/images/svg/AreaOfStudies/aviationn.svg";
 import pharmacy from "../../public/images/svg/AreaOfStudies/pharmacyy.svg";
 import engineering from "../../public/images/svg/AreaOfStudies/engineeringg.svg";
 import { Libre_Baskerville } from "next/font/google";
+import { motion, useAnimation } from "framer-motion";
 
 const libreBaskerville = Libre_Baskerville({
   weight: "700", // if single weight, otherwise you use array like [400, 500, 700],
@@ -30,492 +32,529 @@ const libreBaskerville = Libre_Baskerville({
 });
 
 const AreaOfStudies = () => {
+  const listItemMotion = (duration) => ({
+    whileInView: { opacity: 1, y: 0 },
+    initial: { opacity: 0, y: 100 },
+    transition: { duration: duration },
+  });
   return (
     <div className="pt-10">
-      <div className={`pb-10 ${libreBaskerville.className}`}>
+      <motion.div
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 0.5 }}
+        className={`pb-10 ${libreBaskerville.className}`}
+      >
         <div className="lg:text-[28px] xl:text-[34px]  text-[20px] text-[#867021] text-center bg-[#E3F5FF] font-bold py-2">
           Areas of Studies
         </div>
-      </div>
+      </motion.div>
+
       <div
         className={`grid lg:grid-rows-5 lg:grid-cols-4 sm:px-20 gap-7 pb-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:px-44 px-4 ${libreBaskerville.className} `}
       >
-        <div className=" flex flex-col items-center text-center lg:gap-3 md:gap-2 gap-1 pb-2">
-          <div>
+        <div 
+          className=" flex flex-col items-center text-center lg:gap-3 md:gap-2 gap-1 pb-2"
+        >
+          <motion.div
+            // whileInView={{ opacity: 1, y: 0 }}
+            // initial={{ opacity: 0, y: 100 }}
+            // transition={{ duration: 0.5 }}
+            {...listItemMotion(0.8)}
+          >
             <Image
-              src={agriculture} 
+              src={agriculture}
               alt="agriculture"
               className="rounded-[50%] h-[180px] w-[180px]"
             />
-          </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
+          </motion.div>
+          <motion.div
+            {...listItemMotion(0.8)}
+            className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1"
+          >
             Agriculture
-          </div>
+          </motion.div>
           <div className=" sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li type="disc">Agricultural Science</li>
-              <li type="disc">Farm Management</li>
-              <li type="disc">Sustainable Agriculture</li>
-              <li type="disc">Viticulture</li>
-              <li type="disc">Horticulture</li>
+              <motion.li  {...listItemMotion(0.8)} type="disc">
+                Agricultural Science
+              </motion.li>
+              <motion.li  {...listItemMotion(0.8)} type="disc">
+                Farm Management
+              </motion.li>
+              <motion.li  {...listItemMotion(0.8)} type="disc">
+                Sustainable Agriculture
+              </motion.li>
+              <motion.li  {...listItemMotion(0.8)} type="disc">
+                Viticulture
+              </motion.li>
+              <motion.li  {...listItemMotion(0.8)} type="disc">
+                Horticulture
+              </motion.li>
             </ul>
           </div>
         </div>
 
-        <div className=" flex flex-col items-center text-center lg:gap-3 md:gap-2 gap-1 pb-2">
-          <div>
+        <div
+          className=" flex flex-col items-center text-center lg:gap-3 md:gap-2 gap-1 pb-2"
+        >
+          <motion.div
+          {...listItemMotion(0.8)}>
             <Image
               src={foodandscience}
               alt="agriculture"
               className="rounded-[50%] h-[180px] w-[180px]"
             />
-          </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
+          </motion.div>
+          <motion.div {...listItemMotion(0.8)} className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
             Food Science
-          </div>
-          <div className="  sm:text-[12px] xl:text-[14px]">
+          </motion.div>
+          <motion.div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li type="disc">Food Technology</li>
-              <li type="disc">Food Science</li>
-              <li type="disc">Food Science & Biotechnology</li>
-              <li type="disc">Food Innovation</li>
-              <li type="disc">Food Science & Agriculturee</li>
-              <li type="disc">Food Production & Management</li>
-              <li type="disc">Food Consumer Marketing</li>
+              <motion.li {...listItemMotion(0.8)} type="disc">Food Technology</motion.li>
+              <motion.li {...listItemMotion(0.8)} type="disc">Food Science</motion.li>
+              <motion.li {...listItemMotion(0.8)} type="disc">Food Science & Biotechnology</motion.li>
+              <motion.li {...listItemMotion(0.8)} type="disc">Food Innovation</motion.li>
+              <motion.li {...listItemMotion(0.8)} type="disc">Food Science & Agriculturee</motion.li>
+              <motion.li {...listItemMotion(0.8)} type="disc">Food Production & Management</motion.li>
+              <motion.li {...listItemMotion(0.8)} type="disc">Food Consumer Marketing</motion.li>
             </ul>
-          </div>
+          </motion.div>
         </div>
 
-        <div className=" flex flex-col items-center text-center lg:gap-3 md:gap-2 gap-1 pb-2">
-          <div>
+        <div
+          className=" flex flex-col items-center text-center lg:gap-3 md:gap-2 gap-1 pb-2"
+        >
+          <motion.div {...listItemMotion(0.8)}>
             <Image
               src={EnvironmentClimate}
               alt="agriculture"
               className="rounded-[50%] h-[180px] w-[180px]"
             />
-          </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
+          </motion.div>
+          <motion.div {...listItemMotion(0.8)} className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
             Environment & Climate
-          </div>
-          <div className="  sm:text-[12px] xl:text-[14px] flex">
+          </motion.div>
+          <motion.div className="  sm:text-[12px] xl:text-[14px] flex">
             <ul>
-              <li type="disc">Environmental Science</li>
-              <li type="disc">Environmental Engineering</li>
-              <li type="disc">Wildlife Conservation</li>
-              <li type="disc">Environmental Managemente</li>
-              <li type="disc">Climate Change</li>
-              <li type="disc"> Water Conservation</li>
-              <li type="disc">Ecology & Conservation</li>
+              <motion.li {...listItemMotion(0.8)} type="disc">Environmental Science</motion.li>
+              <motion.li {...listItemMotion(0.8)} type="disc">Environmental Engineering</motion.li>
+              <motion.li {...listItemMotion(0.8)} type="disc">Wildlife Conservation</motion.li>
+              <motion.li {...listItemMotion(0.8)} type="disc">Environmental Managemente</motion.li>
+              <motion.li {...listItemMotion(0.8)} type="disc">Climate Change</motion.li>
+              <motion.li {...listItemMotion(0.8)} type="disc"> Water Conservation</motion.li>
+              <motion.li {...listItemMotion(0.8)} type="disc">Ecology & Conservation</motion.li>
             </ul>
-          </div>
+          </motion.div>
         </div>
 
-        <div className=" flex flex-col items-center text-center lg:gap-3 md:gap-2 gap-1 pb-2">
-          <div>
+        <div
+          className=" flex flex-col items-center text-center lg:gap-3 md:gap-2 gap-1 pb-2"
+        >
+          <motion.div {...listItemMotion(0.8)}>
             <Image
               src={disastermanagment}
               alt="agriculture"
               className="rounded-[50%] h-[180px] w-[180px]"
             />
-          </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
+          </motion.div>
+          <motion.div {...listItemMotion(0.8)} className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
             Disaster Managemet
-          </div>
-          <div className="  sm:text-[12px] xl:text-[14px]">
+          </motion.div>
+          <motion.div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li type="disc">Fire & Safety Engineering</li>
-              <li type="disc">Crisis & Disaster Management</li>
-              <li type="disc">Emergency Management</li>
-              <li type="disc">Earthquake Engineering</li>
-              <li type="disc">Humanitarian Management</li>
-              <li type="disc">Occupation Health & Safety</li>
-              <li type="disc">Occupational Therapy</li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Fire & Safety Engineering</motion.li>
+              <motion.li {...listItemMotion(0.8)} type="disc">Crisis & Disaster Management</motion.li>
+              <motion.li {...listItemMotion(0.8)} type="disc">Emergency Management</motion.li>
+              <motion.li {...listItemMotion(0.8)} type="disc">Earthquake Engineering</motion.li>
+              <motion.li {...listItemMotion(0.8)} type="disc">Humanitarian Management</motion.li>
+              <motion.li {...listItemMotion(0.8)} type="disc">Occupation Health & Safety</motion.li>
+              <motion.li {...listItemMotion(0.8)} type="disc">Occupational Therapy</motion.li>
             </ul>
-          </div>
+          </motion.div>
         </div>
         {/* *********************************************** */}
+
         <div className=" flex flex-col items-center text-center gap-3 pb-2">
-          <div>
+          <motion.div {...listItemMotion(0.8)}>
             <Image
               src={ArchitectureConstruction}
               alt="agriculture"
               className="rounded-[50%] h-[180px] w-[180px]"
             />
-          </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
+          </motion.div>
+          <motion.div {...listItemMotion(0.8)} className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
             Architecture & Construction
-          </div>
+          </motion.div>
           <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li type="disc">
-                Architecture
-                <li type="disc">Civil Engineering</li>
-                <li type="disc">Urban Design & Planning</li>
-                <li type="disc">Construction Management</li>
-                <li type="disc">Sustainable Architecture</li>
-              </li>
+                <motion.li {...listItemMotion(0.8)}  type="disc">Architecture</motion.li>
+                <motion.li {...listItemMotion(0.8)} type="disc">Civil Engineering</motion.li>
+                <motion.li {...listItemMotion(0.8)} type="disc">Urban Design & Planning</motion.li>
+                <motion.li {...listItemMotion(0.8)} type="disc">Construction Management</motion.li>
+                <motion.li {...listItemMotion(0.8)} type="disc">Sustainable Architecture</motion.li>
             </ul>
           </div>
         </div>
 
         <div className=" flex flex-col items-center text-center gap-3 pb-2">
-          <div>
+          <motion.div {...listItemMotion(0.8)} >
             <Image
               src={art}
               alt="agriculture"
               className="rounded-[50%] h-[180px] w-[180px]"
             />
-          </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
+          </motion.div>
+          <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
             Art & Theatre
-          </div>
+          </motion.div>
           <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li type="disc">Acting</li>
-              <li type="disc">Theatre Arts</li>
-              <li type="disc">Film Studies</li>
-              <li type="disc"> Media & Film Production </li>
-              <li type="disc">Music & Performing Arts</li>
-              <li type="disc"> Screen Writing</li>
-              <li type="disc"> Media Management</li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Acting</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Theatre Arts</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Film Studies</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc"> Media & Film Production </motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Music & Performing Arts</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc"> Screen Writing</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc"> Media Management</motion.li>
             </ul>
           </div>
         </div>
 
         <div className=" flex flex-col items-center text-center gap-3 pb-2">
-          <div>
+          <motion.div {...listItemMotion(0.8)} >
             <Image
               src={designPhotography}
               alt="agriculture"
               className="rounded-[50%] h-[180px] w-[180px]"
             />
-          </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
+          </motion.div>
+          <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
             Design, Video & Photography
-          </div>
+          </motion.div>
           <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li type="disc">Photography</li>
-              <li type="disc">Video Editing & VFX</li>
-              <li type="disc">2D and 3D Animation</li>
-              <li type="disc">Game Design</li>
-              <li type="disc">Horticulture</li>
-              <li type="disc">Digital Design</li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Photography</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Video Editing & VFX</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">2D and 3D Animation</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Game Design</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Horticulture</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Digital Design</motion.li>
             </ul>
           </div>
         </div>
 
         <div className=" flex flex-col items-center text-center gap-3 pb-2">
-          <div>
+          <motion.div {...listItemMotion(0.8)}  >
             <Image
               src={it}
               alt="agriculture"
               className="rounded-[50%] h-[180px] w-[180px]"
             />
-          </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
+          </motion.div>
+          <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
             IT & ComputerScience
-          </div>
+          </motion.div>
           <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li type="disc">IT & Computer Science</li>
-              <li type="disc">Networking & Cyber Security</li>
-              <li type="disc">Artificial Intelligence & Robotics</li>
-              <li type="disc">Data Science</li>
-              <li type="disc">Software Development</li>
-              <li type="disc">Digital Forensics </li>
-              <li type="disc"> Health Informatics</li>
-              <li type="disc">Computation Mathematics</li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">IT & Computer Science</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Networking & Cyber Security</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Artificial Intelligence & Robotics</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Data Science</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Software Development</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Digital Forensics </motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc"> Health Informatics</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Computation Mathematics</motion.li>
             </ul>
           </div>
         </div>
 
         <div className=" flex flex-col items-center gap-3 text-center pb-2">
-          <div>
+          <motion.div {...listItemMotion(0.8)} >
             <Image
               src={journalism}
               alt="agriculture"
               className="rounded-[50%] h-[180px] w-[180px]"
             />
-          </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
+          </motion.div>
+          <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
             Journalism
-          </div>
+          </motion.div>
           <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li type="disc">Journalism</li>
-              <li type="disc">Media Management</li>
-              <li type="disc">Creative Writing</li>
-              <li type="disc">Communication</li>
-              <li type="disc">Digital Journalism</li>
-              <li type="disc">Sports Journalism</li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Journalism</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Media Management</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Creative Writing</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Communication</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Digital Journalism</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Sports Journalism</motion.li>
             </ul>
           </div>
         </div>
 
         <div className=" flex flex-col items-center gap-3 text-center pb-2">
-          <div>
+          <motion.div {...listItemMotion(0.8)} >
             <Image
               src={automobiles}
               alt="agriculture"
               className="rounded-[50%] h-[180px] w-[180px]"
             />
-          </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
+          </motion.div>
+          <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
             Automobile
-          </div>
+          </motion.div>
           <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li type="disc">Mechanical Engineering</li>
-              <li type="disc">Electric Vehicle Engineering</li>
-              <li type="disc">Automotive Engineering</li>
-              <li type="disc">Engineering Management</li>
-              <li type="disc">Project Management</li>
-              <li type="disc">Robotics & Automation</li>
-              <li type="disc">Racing Engine Systems</li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Mechanical Engineering</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Electric Vehicle Engineering</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Automotive Engineering</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Engineering Management</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Project Management</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Robotics & Automation</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Racing Engine Systems</motion.li>
             </ul>
           </div>
         </div>
 
         <div className=" flex flex-col items-center gap-3 text-center pb-2 ">
-          <div>
+          <motion.div {...listItemMotion(0.8)} >
             <Image
               src={eductn}
               alt="agriculture"
               className="rounded-[50%] h-[180px] w-[180px]"
             />
-          </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
+          </motion.div>
+          <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
             Education
-          </div>
+          </motion.div>
           <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li type="disc">Education</li>
-              <li type="disc">Special Education</li>
-              <li type="disc">Autism</li>
-              <li type="disc">Inclusive Education</li>
-              <li type="disc">Teaching English (TEFL)</li>
-              <li type="disc">Physical Education</li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Education</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Special Education</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Autism</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Inclusive Education</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Teaching Engmotion.lish (TEFL)</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Physical Education</motion.li>
             </ul>
           </div>
         </div>
 
         <div className=" flex flex-col items-center gap-3 text-center pb-2">
-          <div>
+          <motion.div {...listItemMotion(0.8)} >
             <Image
               src={bussinss}
               alt="agriculture"
               className="rounded-[50%] h-[180px] w-[180px]"
             />
-          </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
+          </motion.div>
+          <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
             Business
-          </div>
+          </motion.div>
           <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li type="disc">Marketing</li>
-              <li type="disc">Human Resource</li>
-              <li type="disc">Digital Marketing</li>
-              <li type="disc">International Business</li>
-              <li type="disc">Business Administration</li>
-              <li type="disc"> Logistics and Supply Chain</li>
-              <li type="disc"> Entrepreneurship</li>
-              <li type="disc"> Business Analytics</li>
-              <li type="disc">Project, & Engineering Management</li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Marketing</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Human Resource</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Digital Marketing</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">International Business</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Business Administration</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc"> Logistics and Supply Chain</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc"> Entrepreneurship</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc"> Business Analytics</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Project, & Engineering Management</motion.li>
             </ul>
           </div>
         </div>
         {/* ***********************2**************** */}
         <div className=" flex flex-col items-center gap-3 text-center pb-2">
-          <div>
+          <motion.div {...listItemMotion(0.8)}  >
             <Image
               src={finance}
               alt="agriculture"
               className="rounded-[50%] h-[180px] w-[180px]"
             />
-          </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
+          </motion.div>
+          <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
             Finance, Banking & Investment
-          </div>
+          </motion.div>
           <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li type="disc">Accounting & Finance</li>
-              <li type="disc">Banking</li>
-              <li type="disc">Investment</li>
-              <li type="disc">Real Estate Management</li>
-              <li type="disc">Financial Technology</li>
-              <li type="disc">Risk Analysis</li>
-              <li type="disc">Asset Management</li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Accounting & Finance</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Banking</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Investment</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Real Estate Management</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Financial Technology</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Risk Analysis</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Asset Management</motion.li>
             </ul>
           </div>
         </div>
 
         <div className=" flex flex-col items-center gap-3 text-center pb-2">
-          <div>
+          <motion.div {...listItemMotion(0.8)} >
             <Image
               src={health}
               alt="agriculture"
               className="rounded-[50%] h-[180px] w-[180px]"
             />
-          </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
+          </motion.div>
+          <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
             Health & Welbeing
-          </div>
+          </motion.div>
           <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li type="disc">Nursing</li>
-              <li type="disc">Public Health</li>
-              <li type="disc">Nutrition</li>
-              <li type="disc">Healthcare Management</li>
-              <li type="disc">Psychology</li>
-              <li type="disc">Health Informatics</li>
-              <li type="disc">Biomedical Science</li>
-              <li type="disc">Microbiology</li>
-              <li type="disc">Radiology</li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Nursing</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Public Health</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Nutrition</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Healthcare Management</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Psychology</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Health Informatics</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Biomedical Science</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Microbiology</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Radiology</motion.li>
             </ul>
           </div>
         </div>
 
         <div className=" flex flex-col items-center gap-3 text-center pb-2">
-          <div>
+          <motion.div {...listItemMotion(0.8)} >
             <Image
               src={animals}
               alt="agriculture"
               className="rounded-[50%] h-[180px] w-[180px]"
             />
-          </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
+          </motion.div>
+          <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
             Animals
-          </div>
+          </motion.div>
           <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li type="disc">Veterinary Science n</li>
-              <li type="disc">Veterinary Medicine</li>
-              <li type="disc">Veterinary Assistant</li>
-              <li type="disc">Animal Audiology</li>
-              <li type="disc">Animal Behaviour & Wildlife Conservatio</li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Veterinary Science </motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Veterinary Medicine</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Veterinary Assistant</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Animal Audiology</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Animal Behaviour & Wildlife Conservatio</motion.li>
             </ul>
           </div>
         </div>
 
         <div className=" flex flex-col items-center gap-3 text-center pb-2">
-          <div>
+          <motion.div {...listItemMotion(0.8)} >
             <Image
               src={socialandbehaviouralscience}
               alt="agriculture"
               className="rounded-[50%] h-[180px] w-[180px]"
             />
-          </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
+          </motion.div>
+          <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
             Social & Behavioral Science
-          </div>
+          </motion.div>
           <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li type="disc">Behavioural Science</li>
-              <li type="disc">Psychology</li>
-              <li type="disc">Mental Health</li>
-              <li type="disc">Cognitive Neuroscience</li>
-              <li type="disc">Autism Spectrum Disorders</li>
-              <li type="disc">Mind Science, & Counselling</li>
-              <li type="disc">Peace & Conflict Analysis</li>
-              <li type="disc">Addiction: Prevention & Treatment</li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Behavioural Science</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Psychology</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Mental Health</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Cognitive Neuroscience</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Autism Spectrum Disorders</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Mind Science, & Counselling</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Peace & Conflict Analysis</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Addiction: Prevention & Treatment</motion.li>
             </ul>
           </div>
         </div>
 
         <div className=" flex flex-col items-center gap-3 text-center pb-2">
-          <div>
+          <motion.div {...listItemMotion(0.8)} >
             <Image
               src={travelfashion}
               alt="agriculture"
               className="rounded-[50%] h-[180px] w-[180px]"
             />
-          </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
+          </motion.div>
+          <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
             Travel, Tourism, Food, & Fashion
-          </div>
+          </motion.div>
           <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li type="disc">Hospitality Management</li>
-              <li type="disc">Event Management</li>
-              <li type="disc">Hotel & Resort Management</li>
-              <li type="disc">Patisserie</li>
-              <li type="disc">Aviation Management</li>
-              <li type="disc">Fashion & Textile Managemetn</li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Hospitality Management</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Event Management</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Hotel & Resort Management</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Patisserie</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Aviation Management</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Fashion & Textile Managemetn</motion.li>
             </ul>
           </div>
         </div>
 
         <div className=" flex flex-col items-center gap-3 text-center pb-2">
-          <div>
+          <motion.div {...listItemMotion(0.8)} >
             <Image
               src={aviation}
               alt="agriculture"
               className="rounded-[50%] h-[180px] w-[180px]"
             />
-          </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
+          </motion.div>
+          <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
             Aviation
-          </div>
+          </motion.div>
           <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li type="disc">Aviation</li>
-              <li type="disc">Student Pilot License</li>
-              <li type="disc">Commercial Pilot License</li>
-              <li type="disc">Aircraft Maintenance Engineering</li>
-              <li type="disc">Aerospace</li>
-              <li type="disc">Airline & Airport Management</li>
-              <li type="disc">Airport Transport Management</li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Aviation</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Student Pilot License</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Commercial Pilot License</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Aircraft Maintenance Engineering</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Aerospace</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Airline & Airport Management</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Airport Transport Management</motion.li>
             </ul>
           </div>
         </div>
 
         <div className=" flex flex-col items-center gap-2 text-center pb-2">
-          <div>
+          <motion.div {...listItemMotion(0.8)} >
             <Image
               src={pharmacy}
               alt="agriculture"
               className="rounded-[50%] h-[180px] w-[180px]"
             />
-          </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
+          </motion.div>
+          <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
             Pharmacy
-          </div>
+          </motion.div>
           <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li type="disc">Pharmacology</li>
-              <li type="disc">Pharmaceutical Science</li>
-              <li type="disc">Toxicology</li>
-              <li type="disc">OSPAP</li>
-              <li type="disc">Drug Development</li>
-              <li type="disc">Cancer Pharmacology</li>
-              <li type="disc">Cellular Pharmacology</li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Pharmacology</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Pharmaceutical Science</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Toxicology</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">OSPAP</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Drug Development</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Cancer Pharmacology</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Cellular Pharmacology</motion.li>
             </ul>
           </div>
         </div>
 
         <div className=" flex flex-col items-center gap-3 text-center pb-2">
-          <div>
+          <motion.div {...listItemMotion(0.8)} >
             <Image
               src={engineering}
               alt="agriculture"
               className="rounded-[50%] h-[180px] w-[180px]"
             />
-          </div>
-          <div className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base   leading-9 h-[70px] mt-1">
+          </motion.div>
+          <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base   leading-9 h-[70px] mt-1">
             Engineering
-          </div>
+          </motion.div>
           <div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
-              <li type="disc">Mining Engineering</li>
-              <li type="disc">Petroleum Engineering</li>
-              <li type="disc">Chemical Engineering</li>
-              <li type="disc">Mechanical Engineering</li>
-              <li type="disc">Electrical Engineering</li>
-              <li type="disc">Civil Engineering</li>
-              <li type="disc">Environmental Engineering</li>
-              <li type="disc">Computer Science</li>
-              <li type="disc">Marine Engineering</li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Mining Engineering</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Petroleum Engineering</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Chemical Engineering</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Mechanical Engineering</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Electrical Engineering</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Civil Engineering</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Environmental Engineering</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Computer Science</motion.li>
+              <motion.li {...listItemMotion(0.8)}  type="disc">Marine Engineering</motion.li>
             </ul>
           </div>
         </div>
