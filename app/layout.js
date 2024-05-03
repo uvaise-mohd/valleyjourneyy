@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 // import Preloader from "@/components/Preloader";
 import { metadata } from "./metaData";
-import NextModal from "@/components/NextModal";
+
 
 
 
@@ -40,7 +40,7 @@ useEffect(() => {
       <Header />
       <main>{children}</main>
       <Footer />
-      <NextModal/>
+      
 
     </body>
   </html>
