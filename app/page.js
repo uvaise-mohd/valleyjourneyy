@@ -1,3 +1,4 @@
+"use client";
 import About from "@/components/About";
 import Hero from "@/components/Hero";
 import Image from "next/image";
@@ -8,18 +9,24 @@ import Institutes from "@/components/Institutes";
 import AreaOfStudies from "@/components/AreaOfStudies";
 import Standout from "@/components/Standout";
 import StudentStories from "@/components/StudentStories";
+import MyNewComponent from "@/components/MyNewComponent";
+import NextModal from "@/components/NextModal";
+import { NextUIProvider } from "@nextui-org/react";
 
 export default function Home() {
   return (
     <div>
-      <Hero />
-      <About />
-      <GlobalCommunity/>
-      <Accreditation/>
-      <Institutes/>
-      <AreaOfStudies/>
-      <Standout/>
-      <StudentStories/>
+      <NextUIProvider>
+        <Hero />
+        {/* <MyNewComponent/> */}
+        <About />
+        <GlobalCommunity />
+        <Accreditation />
+        <Institutes />
+        <AreaOfStudies />
+        <Standout />
+        <StudentStories />
+      </NextUIProvider>
     </div>
   );
 }

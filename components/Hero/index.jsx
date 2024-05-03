@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import hero from "../../public/images/svg/hero3.svg";
+import herogif from "../../public/gif/0503-ezgif.com-optimize.gif"
 import main from "../../public/images/AreaOfStudies/2.jpg";
 import { Aleo, Libre_Baskerville } from "next/font/google";
 import { delay, motion } from "framer-motion";
@@ -9,6 +10,7 @@ import {
   slideInFromLeft,
   slideInFromRight,
 } from "@/public/utilities/animationVariants";
+
 
 const libreBaskerville = Libre_Baskerville({
   weight: "700", // if single weight, otherwise you use array like [400, 500, 700],
@@ -89,7 +91,7 @@ const Hero = () => {
                 > */}
                   <Image
                     // src={main}
-                    src={hero}
+                    src={herogif}
                     height={1600}
                     width={1400}
                     // height={1400}

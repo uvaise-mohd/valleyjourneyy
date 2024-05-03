@@ -16,12 +16,45 @@ const lora = Lora({
 });
 
 const Institutes = () => {
+  const variant = {
+    visible: { scale: 1 },
+    hidden: { scale: 0 },
+    transition: { duration: 5.5 },
+  };
+
+  // const [scrollDirection, setScrollDirection] = useState("down");
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const currentScrollY = window.scrollY;
+  //     // console.log(currentScrollY,"currentScrollY");
+  //     const prevScrollY = useRef(0);
+  //     // console.log(prevScrollY, 'prevScrollY');
+
+  //     if (currentScrollY > prevScrollY.current) {
+  //       setScrollDirection("down");
+  //     } else {
+  //       setScrollDirection("up");
+  //     }
+
+  //     prevScrollY.current = currentScrollY;
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
   return (
     <div className="bg-[#E2E8F2] py-3 ">
       <motion.div
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: 100 }}
         transition={{ duration: 0.5 }}
+        // initial="hidden"
+        // animate={scrollDirection === "down" ? { opacity: 1, y: 0 } : {}}
+        // transition={{ duration: 0.5 }}
         className={` lg:text-[24px] xl:text-[30px] text-[19px] px-4  text-[#243969] text-center font-extrabold ${libreBaskerville.className}`}
       >
         Universities, Colleges and Polytechniques
@@ -31,6 +64,9 @@ const Institutes = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: 100 }}
         transition={{ duration: 0.7 }}
+        // initial="hidden"
+        // animate={scrollDirection === "down" ? { opacity: 1, y: 0 } : {}}
+        // transition={{ duration: 0.5 }}
         className={`lg:text-xl xl:text-[22px] text-[16px] text-center lg:px-64 md:px-80 px-4 pb-7 ${lora.className}`}
       >
         Both university and location can contribute to a student’s academic
@@ -41,72 +77,72 @@ const Institutes = () => {
       <div
         className={`xl:text-[27px] lg:text-[21px] md:text-[17px] sm:text-lg text-base  text-white grid md:grid-cols-2 grid-cols-1 gap-1 md:px-44 px-4 ${libreBaskerville.className} `}
       >
-        <motion.div
-          whileInView={{ opacity: 1, y: 0 }}
-          initial={{ opacity: 0, y: 100 }}
-          transition={{ duration: 1 }}
-        >
+        <motion.div variants={variant} initial="hidden"
+         whileInView="visible"
+        // animate={scrollDirection === "down" ? { opacity: 1, y: 0 } : {}}
+         >
           <div className="flex justify-center">
-            <motion.div
-              whileInView={{ opacity: 1, y: 0 }}
-              initial={{ opacity: 0, y: 100 }}
-              transition={{ duration: 1 }}
-              className=" bg-[#243969] border-2 border-solid rounded-[90px] text-start items-center flex justify-start px-10 w-[550px] h-[95px]"
-            >
+            <div className=" bg-[#243969] border-2 border-solid rounded-[90px] text-start items-center flex justify-start px-10 w-[550px] h-[95px]">
               Over 500 Institutions to Choose From
-            </motion.div>
+            </div>
           </div>
         </motion.div>
 
         {/* lg:text-[20px] xl:text-[28px] text-lg */}
-        <motion.div
-          whileInView={{ opacity: 1, y: 0 }}
-          initial={{ opacity: 0, y: 100 }}
-          transition={{ duration: 1 }}
-        >
+        <motion.div variants={variant} initial="hidden" whileInView="visible">
           <div className="flex justify-center ">
-            <motion.div
-              whileInView={{ opacity: 1, y: 0 }}
-              initial={{ opacity: 0, y: 100 }}
-              transition={{ duration: 1 }}
+            <div
+              // whileInView={{ opacity: 1, y: 0 }}
+              // initial={{ opacity: 0, y: 100 }}
+              // transition={{ duration: 1 }}
+              variants={variant}
+              initial="hidden"
+              whileInView="visible"
               className=" bg-[#243969] border-2 border-solid rounded-[90px] text-start items-center flex justify-start px-10 w-[550px] h-[95px]"
             >
               Universities Ranked in the Top 100{" "}
-            </motion.div>
+            </div>
           </div>
         </motion.div>
 
         <motion.div
-          whileInView={{ opacity: 1, y: 0 }}
-          initial={{ opacity: 0, y: 100 }}
-          transition={{ duration: 1.3 }}
+          // whileInView={{ opacity: 1, y: 0 }}
+          // initial={{ opacity: 0, y: 100 }}
+          // transition={{ duration: 1.3 }}
+          variants={variant}
+          initial="hidden"
+          whileInView="visible"
         >
           <div className="flex justify-center ">
-            <motion.div
-              whileInView={{ opacity: 1, y: 0 }}
-              initial={{ opacity: 0, y: 100 }}
-              transition={{ duration: 1 }}
+            <div
+              // whileInView={{ opacity: 1, y: 0 }}
+              // initial={{ opacity: 0, y: 100 }}
+              // transition={{ duration: 1 }}
               className=" bg-[#243969] border-2 border-solid rounded-[90px] text-start items-center flex justify-start px-10 w-[550px] h-[95px]"
             >
               Admission to Universities Offering Free Education
-            </motion.div>
+            </div>
           </div>
         </motion.div>
 
         <motion.div
-          whileInView={{ opacity: 1, y: 0 }}
-          initial={{ opacity: 0, y: 100 }}
-          transition={{ duration: 1.3 }}
+          // whileInView={{ opacity: 1, y: 0 }}
+          // initial={{ opacity: 0, y: 100 }}
+          // transition={{ duration: 1.3 }}
+          variants={variant}
+          initial="hidden"
+          whileInView="visible"
         >
           <div className="flex justify-center ">
-            <motion.div
-              whileInView={{ opacity: 1, y: 0 }}
-              initial={{ opacity: 0, y: 100 }}
-              transition={{ duration: 1 }}
+            <div
+              // whileInView={{ opacity: 1, y: 0 }}
+              // initial={{ opacity: 0, y: 100 }}
+              // transition={{ duration: 1 }}
+
               className=" bg-[#243969] border-2 border-solid rounded-[90px] text-start items-center flex justify-start px-10 w-[550px] h-[95px]"
             >
               Reputed Institutions with Accreditation
-            </motion.div>
+            </div>
           </div>
         </motion.div>
       </div>

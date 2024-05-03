@@ -91,7 +91,7 @@ const About = () => {
           <motion.div
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 100 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.5 }}
             className="flex flex-col  items-center"
           >
             <motion.div
@@ -112,7 +112,7 @@ const About = () => {
           <motion.div
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 100 }}
-            transition={{ duration: 1.1 }}
+            transition={{ duration: 0.5 }}
             className="flex flex-col gap-1 items-center"
           >
             <motion.div
@@ -131,7 +131,7 @@ const About = () => {
           <motion.div
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 100 }}
-            transition={{ duration: 1.4 }}
+            transition={{ duration: 0.5 }}
             className="flex flex-col  items-center"
           >
             <motion.div

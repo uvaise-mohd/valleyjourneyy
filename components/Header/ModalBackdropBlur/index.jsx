@@ -7,3 +7,13 @@ const ModalBackdropBlur = ({ isOpen }) => {
 };
 
 export default ModalBackdropBlur;
+
+
+// import React from "react";
+// import styles from "./ModalBackdropBlur.module.css";
+
+// const ModalBackdropBlur = ({ isOpen }) => {
+//   return <div className={`${styles.backdrop} ${isOpen ? styles.visible : ""}`} />;
+// };
+
+// export default ModalBackdropBlur;
