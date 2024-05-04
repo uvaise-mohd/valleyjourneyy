@@ -46,7 +46,7 @@ const Standout = () => {
   });
 
   return (
-    <div>
+    <div id="News">
       <div className={` bg-[#CCFACF]  ${aleo.className}`}>
         <motion.div
           whileInView={{ opacity: 1, y: 0 }}

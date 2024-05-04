@@ -38,7 +38,7 @@ const AreaOfStudies = () => {
     transition: { duration: duration },
   });
   return (
-    <div className="pt-10">
+    <div className="pt-10" id="Courses">
       <motion.div
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: 100 }}

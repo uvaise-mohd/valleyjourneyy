@@ -52,12 +52,13 @@ const GlobalCommunity = () => {
   });
 
   return (
-    <div className=" pb-10 pt-16 ">
+    <div className=" pb-10 pt-16 " id="Countries">
       <motion.div
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: 100 }}
         transition={{ duration: 0.5 }}
         className={` text-center font-bold md:text-[25px] text-[#083C82] pb-2 lg:text-[20px] xl:text-[22px] text-base ${libreBaskerville.className}`}
+        
       >
         Join the global community!
       </motion.div>

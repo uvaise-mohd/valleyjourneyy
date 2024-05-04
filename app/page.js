@@ -9,8 +9,6 @@ import Institutes from "@/components/Institutes";
 import AreaOfStudies from "@/components/AreaOfStudies";
 import Standout from "@/components/Standout";
 import StudentStories from "@/components/StudentStories";
-import MyNewComponent from "@/components/MyNewComponent";
-import NextModal from "@/components/NextModal";
 import { NextUIProvider } from "@nextui-org/react";
 
 export default function Home() {
@@ -18,7 +16,6 @@ export default function Home() {
     <div>
       <NextUIProvider>
         <Hero />
-        {/* <MyNewComponent/> */}
         <About />
         <GlobalCommunity />
         <Accreditation />
@@ -26,7 +23,6 @@ export default function Home() {
         <AreaOfStudies />
         <Standout />
         <StudentStories />
-        {/* <NextModal/> */}
       </NextUIProvider>
     </div>
   );

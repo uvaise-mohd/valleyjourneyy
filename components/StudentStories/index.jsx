@@ -35,7 +35,7 @@ const StudentStories = () => {
   });
 
   return (
-    <div className=" pt-10 bg-[#F6FAFA]">
+    <div className=" pt-10 bg-[#F6FAFA]" id="Accommodation">
       <motion.div
         // {...listItemMotion(0.8)}
         whileInView={{ opacity: 1, y: 0 }}

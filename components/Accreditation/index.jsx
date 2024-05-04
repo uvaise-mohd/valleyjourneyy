@@ -13,7 +13,7 @@ const libreBaskerville = Libre_Baskerville({
 
 const Accreditation = () => {
   return (
-    <div className=" pb-10">
+    <div className=" pb-10" id="IELTS">
       <div className={libreBaskerville.className}>
         <div className="flex justify-center md:px-20 px-4">
           <motion.div

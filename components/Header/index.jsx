@@ -125,22 +125,22 @@ const Header = (args) => {
           </div>
           <div>
             <ul className=" navlinks navsetup duration-500 flex flex-col absolute  top-[-800%] left-0 bg-white w-full widthsetup  gap-6 items-start py-10  text-[12px] xl:text-sm px-4 xl:gap-6 2xl:gap-7">
-              <Link className="header-color" href={"#"}>
+              <Link className="header-color" href="#Countries">
                 Countries
               </Link>
-              <Link className="header-color" href={"#"}>
+              <Link className="header-color" href="#Courses">
                 Courses
               </Link>
-              <Link className="header-color" href={"#"}>
+              <Link className="header-color" href="#IELTS">
                 IELTS
               </Link>
-              <Link className="header-color" href={"#"}>
+              <Link className="header-color" href="#AboutUs">
                 About Us
               </Link>
-              <Link className="header-color" href={"#"}>
+              <Link className="header-color" href="#News">
                 News
               </Link>
-              <Link className="header-color" href={"#"}>
+              <Link className="header-color" href="#Accommodation">
                 Accommodation
               </Link>
             </ul>
