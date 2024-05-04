@@ -26,7 +26,7 @@ export default function Home() {
         <AreaOfStudies />
         <Standout />
         <StudentStories />
-        <NextModal/>
+        {/* <NextModal/> */}
       </NextUIProvider>
     </div>
   );
