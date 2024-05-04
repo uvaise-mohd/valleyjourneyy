@@ -32,7 +32,6 @@ import { LockIcon } from "../Header/LockIcon";
 import emailjs from "@emailjs/browser";
 import ModalBackdropBlur from "./ModalBackdropBlur";
 
-
 const libreBaskerville = Libre_Baskerville({
   weight: "400", // if single weight, otherwise you use array like [400, 500, 700],
   style: "normal",
@@ -48,13 +47,13 @@ const variants = {
 const Header = (args) => {
   const form = useRef();
 
-  const sendEmail = (e,onClose) => {
+  const sendEmail = (e, onClose) => {
     e.preventDefault();
     const userName = form.current.elements.userName.value;
     const contactNumber = form.current.elements.contactNumber.value;
     const userEmail = form.current.elements.userEmail.value;
     const message = form.current.elements.message.value;
-  
+
     // Check if any field is empty
     if (!userName || !contactNumber || !userEmail || !message) {
       // If any field is empty, display an error message or perform necessary action
@@ -62,7 +61,7 @@ const Header = (args) => {
       toast.error("Please fill in all fields.");
       return; // Stop further execution
     }
-  
+
     emailjs
       .sendForm("service_r318w79", "template_zrudkvm", form.current, {
         publicKey: "6nGxNurHMueol0bl-",
@@ -75,6 +74,7 @@ const Header = (args) => {
         },
         (error) => {
           toast.error("Mail sent error");
+          onClose();
         }
       );
   };
@@ -82,9 +82,9 @@ const Header = (args) => {
   const [isOpenn, setIsOpenn] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
   const [closeIcon, setCloseIcon] = useState(false);
-  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
 
-  const toggle = () => setModal(!modal);
+  // const toggle = () => setModal(!modal);
 
   // useEffect(() => {
   //   window.addEventListener("scroll", () => {
@@ -109,11 +109,11 @@ const Header = (args) => {
       navLinks.classList.toggle("top-[75px]");
     }
   };
-
   return (
     <>
       <nav
-        className={`flex justify-between sm:pt-2 pt-6  items-center sticky top-0 z-20 sm:px-32 px-4 bg-white ${libreBaskerville.className}`}
+        className={`flex justify-between sm:pt-2 pt-6 items-center sticky z-20  top-0 sm:px-32 px-4 bg-white for-mobile-for-modal ${libreBaskerville.className}`}
+        
       >
         <div className="flex items-center lg:gap-2 xl:gap-3 2xl:gap-4">
           <div>
@@ -124,35 +124,39 @@ const Header = (args) => {
             />
           </div>
           <div>
-            <ul className=" navlinks navsetup duration-500 flex  flex-col absolute  top-[-800%] left-0 bg-white w-full widthsetup  gap-6 items-start py-10  text-[12px] xl:text-sm px-4 xl:gap-6 2xl:gap-7 ">
-              <Link className="header-color" href={"#"}>Countries</Link>
-              <Link className="header-color" href={"#"}>Courses</Link>
-              <Link className="header-color" href={"#"}>IELTS</Link>
-              <Link className="header-color" href={"#"}>About Us</Link>
-              <Link className="header-color" href={"#"}>News</Link>
-              <Link className="header-color" href={"#"}>Accommodation</Link>
+            <ul className=" navlinks navsetup duration-500 flex flex-col absolute  top-[-800%] left-0 bg-white w-full widthsetup  gap-6 items-start py-10  text-[12px] xl:text-sm px-4 xl:gap-6 2xl:gap-7">
+              <Link className="header-color" href={"#"}>
+                Countries
+              </Link>
+              <Link className="header-color" href={"#"}>
+                Courses
+              </Link>
+              <Link className="header-color" href={"#"}>
+                IELTS
+              </Link>
+              <Link className="header-color" href={"#"}>
+                About Us
+              </Link>
+              <Link className="header-color" href={"#"}>
+                News
+              </Link>
+              <Link className="header-color" href={"#"}>
+                Accommodation
+              </Link>
             </ul>
           </div>
         </div>
 
-        <div className="flex gap-2 items-center   ">
-          {/* <button className="sm:text-lg  text-base talktous-below365 text-[#2A36AC] border-2 border-solid divide-black rounded-xl px-1 sm:px-2 py-1    ">
-          Talk To Us
-         </button> */}
-          {/* <a
-          href="https://valleyjourney.com/notify.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        > */}
-
+        <div className="flex gap-2 items-center">
           <Button
             type="button"
             onPress={onOpen}
             className="sm:text-lg text-base talktous-below365 text-[#2A36AC] border-2 border-solid divide-black rounded-xl px-1 sm:px-2 py-1 font-bold bg-white"
           >
             Talk To Us
+            {console.log("Talk To Us - clicked")}
           </Button>
-          {/* inline-flex */}
+
           <motion.div
             animate={isOpenn ? "open" : "closed"}
             variants={variants}
@@ -166,162 +170,173 @@ const Header = (args) => {
             )}
           </motion.div>
         </div>
+
         <Toaster position="top-right" richColors />
+
+        <Modal
+          isOpen={isOpen}
+          // size={size}
+          // onOpenChange={onOpenChange}
+          onClose={onClose}
+          placement="top-center"
+          className="modal-above-pages"
+        >
+          <ModalContent
+          className="haiiiiiiiiii">
+            {(onClose) => (
+              <>
+                <form
+                  ref={form}
+                  onSubmit={(e) => {
+                    sendEmail(e, onClose);
+                  }}
+                >
+                  <ModalBody>
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        marginTop: "30px",
+                      }}
+                    >
+                      <label style={{ marginBottom: "5px", marginTop: "20px" }}>
+                        Full Name
+                      </label>
+                      <Input
+                        type="text"
+                        name="userName"
+                        autoFocus
+                        placeholder="Enter your full name"
+                        // required
+                        style={{
+                          borderRadius: "4px",
+                          padding: "8px",
+                        }}
+                      />
+                    </div>
+
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                      }}
+                    >
+                      <label style={{ marginBottom: "5px" }}>
+                        Contact Number
+                      </label>
+                      <Input
+                        type="number"
+                        name="contactNumber"
+                        // autoFocus
+                        // endContent={
+                        //   <MailIcon className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
+                        // }
+                        // label="Full Name"
+                        placeholder="Enter your contact"
+                        // variant="bordered"
+                        // labelPosition="top"
+                        // required
+                        style={{
+                          // border: "1px solid black",
+                          borderRadius: "4px",
+                          padding: "8px",
+                        }}
+                      />
+                    </div>
+
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                      }}
+                    >
+                      <label style={{ marginBottom: "5px" }}>Email</label>
+                      <Input
+                        type="email"
+                        name="userEmail"
+                        // autoFocus
+                        // endContent={
+                        //   <MailIcon className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
+                        // }
+                        // label="Full Name"
+                        placeholder="Enter your email"
+                        // variant="bordered"
+                        // labelPosition="top"
+                        // required
+                        style={{
+                          // border: "1px solid black",
+                          borderRadius: "4px",
+                          padding: "8px",
+                        }}
+                      />
+                    </div>
+
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                      }}
+                    >
+                      <label style={{ marginBottom: "5px" }}>Description</label>
+                      <Input
+                        type="text"
+                        name="message"
+                        // autoFocus
+                        // endContent={
+                        //   <MailIcon className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
+                        // }
+                        // label="Full Name"
+                        placeholder="What do you wish to tell us "
+                        // variant="bordered"
+                        // labelPosition="top"
+                        // required
+                        style={{
+                          // border: "1px solid black",
+                          borderRadius: "4px",
+                          padding: "8px",
+                        }}
+                      />
+                    </div>
+                  </ModalBody>
+                  <ModalFooter>
+                    <Button
+                      className="bg-[#77b591] text-[white]"
+                      variant="flat"
+                      onPress={onClose}
+                    >
+                      Close
+                    </Button>
+                    <Button
+                      // color="primary"
+                      type="submit"
+                      value="Send"
+                      onClick={() => toast("Loading....")}
+                      className="bg-[#0B4715] text-white"
+                    >
+                      Submit
+                    </Button>
+                  </ModalFooter>
+                </form>
+              </>
+            )}
+          </ModalContent>
+        </Modal>
       </nav>
-
-      {/* <ModalBackdropBlur isOpen={isOpen} /> */}
-
-      <Modal
-        // backdrop="opaque"
-        isOpen={isOpen}
-        onOpenChange={onOpenChange}
-        placement="top-center"
-        // placement="top"
-        className="modal-above-pages"
-        // classNames={{
-        //   backdrop:
-        //     "bg-gradient-to-t from-zinc-900 to-zinc-900/10 backdrop-opacity-20",
-        // }}
-      >
-        <ModalContent>
-          {(onClose) => (
-            <>
-              <form ref={form} onSubmit={(e) => {sendEmail(e, onClose)}}>
-                <ModalBody>
-                  <div
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      marginTop: "30px",
-                    }}
-                  >
-                    <label style={{ marginBottom: "5px", marginTop: "20px" }}>
-                      Full Name
-                    </label>
-                    <Input
-                      type="text"
-                      name="userName"
-                      autoFocus
-                      placeholder="Enter your full name"
-                      // required
-                      style={{
-                        borderRadius: "4px",
-                        padding: "8px",
-                      }}
-                    />
-                  </div>
-
-                  <div
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                    }}
-                  >
-                    <label style={{ marginBottom: "5px" }}>
-                      Contact Number
-                    </label>
-                    <Input
-                      type="number"
-                      name="contactNumber"
-                      // autoFocus
-                      // endContent={
-                      //   <MailIcon className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
-                      // }
-                      // label="Full Name"
-                      placeholder="Enter your contact"
-                      // variant="bordered"
-                      // labelPosition="top"
-                      // required
-                      style={{
-                        // border: "1px solid black",
-                        borderRadius: "4px",
-                        padding: "8px",
-                      }}
-                    />
-                  </div>
-
-                  <div
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                    }}
-                  >
-                    <label style={{ marginBottom: "5px" }}>Email</label>
-                    <Input
-                      type="email"
-                      name="userEmail"
-                      // autoFocus
-                      // endContent={
-                      //   <MailIcon className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
-                      // }
-                      // label="Full Name"
-                      placeholder="Enter your email"
-                      // variant="bordered"
-                      // labelPosition="top"
-                      // required
-                      style={{
-                        // border: "1px solid black",
-                        borderRadius: "4px",
-                        padding: "8px",
-                      }}
-                    />
-                  </div>
-
-                  <div
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                    }}
-                  >
-                    <label style={{ marginBottom: "5px" }}>Description</label>
-                    <Input
-                      type="text"
-                      name="message"
-                      // autoFocus
-                      // endContent={
-                      //   <MailIcon className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
-                      // }
-                      // label="Full Name"
-                      placeholder="What do you wish to tell us "
-                      // variant="bordered"
-                      // labelPosition="top"
-                      // required
-                      style={{
-                        // border: "1px solid black",
-                        borderRadius: "4px",
-                        padding: "8px",
-                      }}
-                    />
-                  </div>
-                </ModalBody>
-                <ModalFooter>
-                  <Button  className="bg-[#77b591] text-[white]" variant="flat" onPress={onClose}>
-                    Close
-                  </Button>
-                  <Button
-                    // color="primary"
-                    type="submit"
-                    value="Send"
-                    onClick={() => toast("Loading....")}
-                    className="bg-[#0B4715] text-white"
-                  >
-                    Submit
-                  </Button>
-                </ModalFooter>
-              </form>
-            </>
-          )}
-        </ModalContent>
-      </Modal>
-
-
-      
-
-
-
-      
     </>
   );
 };
 
 export default Header;
+
+{
+  /* <button className="sm:text-lg  text-base talktous-below365 text-[#2A36AC] border-2 border-solid divide-black rounded-xl px-1 sm:px-2 py-1    ">
+          Talk To Us
+         </button> */
+}
+{
+  /* <a
+          href="https://valleyjourney.com/notify.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        > */
+}

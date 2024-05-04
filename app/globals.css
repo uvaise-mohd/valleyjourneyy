@@ -125,7 +125,7 @@
 
 /* Efecto de cortina */
 .loaded .loader-section.section-left {
-  transform: translateX(-101%);
+  transform: translateX(-101%); 
   transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1.000);
 }
 
