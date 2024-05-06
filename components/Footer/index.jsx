@@ -2,10 +2,10 @@ import Image from "next/image";
 import React from "react";
 import logo from "../../public/images/svg/footerlogo.svg";
 import { Belleza, Cardo, Libre_Baskerville } from "next/font/google";
-import fb from "../../public/images/svg/socialmedia/facebook.svg";
+import fb from "../../public/images/svg/socialmedia/facebook2.svg";
 import insta from "../../public/images/svg/socialmedia/insta.svg";
-import twitter from "../../public/images/svg/socialmedia/twitter.svg";
-import youtube from "../../public/images/socialMedia/youtube.png";
+import twitter from "../../public/images/svg/socialmedia/sl_z_072523_61700_01 (1).svg";
+import linkedin from "../../public/images/svg/socialmedia/linkedin2.svg";
 import { motion } from "framer-motion";
 
 const belleza = Belleza({
@@ -97,16 +97,36 @@ const Footer = () => {
 
               <div className="flex flex-row sm:gap-2 gap-1 sm:justify-between justify-center items-center ">
                 <div className="text-white mb-1">
-                  <Image src={fb} alt="fb" height={40} width={40} />
+                  <a
+                    href="https://www.facebook.com/valleyjourneyeducation"
+                    target="_blank"
+                  >
+                    <Image src={fb} alt="fb" height={35} width={35} />
+                  </a>
                 </div>
                 <div>
-                  <Image src={insta} height={50} width={50} alt="fb" />
+                  <a
+                    href="https://www.instagram.com/valleyjourneyeducation"
+                    target="_blank"
+                  >
+                    <Image src={insta} height={50} width={50} alt="fb" />
+                  </a>
                 </div>
                 <div>
-                  <Image src={youtube} height={70} width={70} alt="fb" />
+                  <a
+                    href="https://www.linkedin.com/company/valley-journey-overseas-education/"
+                    target="_blank"
+                  >
+                    <Image src={linkedin} height={35} width={35} alt="fb" />
+                  </a>
                 </div>
-                <div>
-                  <Image src={twitter} height={40} width={40} alt="fb" />
+                <div style={{ marginLeft: "10px" }}>
+                  <a
+                    href="https://www.linkedin.com/company/valley-journey-overseas-education/"
+                    target="_blank"
+                  >
+                    <Image src={twitter} height={35} width={35} alt="fb" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -130,8 +150,8 @@ const Footer = () => {
         className={`${belleza.className} bg-[#3D514D] items-center flex flex-row justify-center gap-2 px-4 py-2 text-white`}
       >
         <div></div>
-        <div className=" text-lg text-center ">
-          2024 Valley Journey Overseas Education LLP : All rights reserved
+        <div className=" sm:text-lg text-xs text-center ">
+          Copyright © 2024 Valley Journey Overseas Education LLP
         </div>
       </div>
     </div>

@@ -5,6 +5,7 @@ import agriculture from "../../public/images/AreaOfStudiespng/agriculture.png";
 import foodandscience from "../../public/images/AreaOfStudiespng/foodscience.png";
 import EnvironmentClimate from "../../public/images/AreaOfStudiespng/enviornmentalclimate.png";
 import disastermanagment from "../../public/images/AreaOfStudiespng/disastermanagment.png";
+
 import ArchitectureConstruction from  "../../public/images/AreaOfStudiespng/architectureandconstruction.png"
 import art from "../../public/images/AreaOfStudiespng/art.png";
 import designPhotography from "../../public/images/AreaOfStudiespng/designvideophotography.png";
@@ -129,7 +130,7 @@ const AreaOfStudies = () => {
             <Image
               src={EnvironmentClimate}
               alt="agriculture"
-              className="rounded-[50%] h-[180px] w-[180px]"
+              className="rounded-full h-[180px] w-[180px]"
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)} className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
@@ -155,11 +156,11 @@ const AreaOfStudies = () => {
             <Image
               src={disastermanagment}
               alt="agriculture"
-              className="rounded-[50%] h-[180px] w-[180px]"
+              className="rounded-full h-[180px] w-[180px]"
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)} className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
-            Disaster Managemet
+            Disaster Management
           </motion.div>
           <motion.div className="  sm:text-[12px] xl:text-[14px]">
             <ul>
@@ -173,6 +174,7 @@ const AreaOfStudies = () => {
             </ul>
           </motion.div>
         </div>
+
         {/* *********************************************** */}
 
         <div className=" flex flex-col items-center text-center gap-3 pb-2">

@@ -63,8 +63,8 @@ const Header = (args) => {
     }
 
     emailjs
-      .sendForm("service_r318w79", "template_zrudkvm", form.current, {
-        publicKey: "6nGxNurHMueol0bl-",
+      .sendForm("service_i7zauzi", "template_l96d0tg", form.current, {
+        publicKey: "KMSW1yNMG1n07GWTL",
       })
       .then(
         () => {
