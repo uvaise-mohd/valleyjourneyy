@@ -155,7 +155,7 @@ const AreaOfStudies = () => {
             <Image
               src={disastermanagment}
               alt="agriculture"
-              className="rounded-[40%] h-[180px] w-[180px]"
+              className="rounded-[50%] h-[180px] w-[180px]"
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)} className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
@@ -274,7 +274,7 @@ const AreaOfStudies = () => {
             <Image
               src={journalism}
               alt="agriculture"
-              className="rounded-[20%] h-[180px] w-[180px]"
+              className="rounded-[50%] h-[180px] w-[180px]"
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
@@ -297,7 +297,7 @@ const AreaOfStudies = () => {
             <Image
               src={automobiles}
               alt="agriculture"
-              className="rounded-[40%] h-[180px] w-[180px]"
+              className="rounded-[50%] h-[180px] w-[180px]"
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
@@ -321,7 +321,7 @@ const AreaOfStudies = () => {
             <Image
               src={eductn}
               alt="agriculture"
-              className="rounded-[30%] h-[180px] w-[180px]"
+              className="rounded-[50%] h-[180px] w-[180px]"
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
@@ -344,7 +344,7 @@ const AreaOfStudies = () => {
             <Image
               src={bussinss}
               alt="agriculture"
-              className="rounded-[30%] h-[180px] w-[180px]"
+              className="rounded-[50%] h-[180px] w-[180px]"
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
@@ -467,7 +467,7 @@ const AreaOfStudies = () => {
             <Image
               src={travelfashion}
               alt="agriculture"
-              className="rounded-[30%] h-[180px] w-[180px]"
+              className="rounded-[50%] h-[180px] w-[180px]"
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
@@ -490,7 +490,7 @@ const AreaOfStudies = () => {
             <Image
               src={aviation}
               alt="agriculture"
-              className="rounded-[30%] h-[180px] w-[180px]"
+              className="rounded-[50%] h-[180px] w-[180px]"
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
@@ -514,7 +514,7 @@ const AreaOfStudies = () => {
             <Image
               src={pharmacy}
               alt="agriculture"
-              className="rounded-[30%] h-[180px] w-[180px]"
+              className="rounded-[50%] h-[180px] w-[180px]"
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
@@ -538,7 +538,7 @@ const AreaOfStudies = () => {
             <Image
               src={engineering}
               alt="agriculture"
-              className="rounded-[30%] h-[180px] w-[180px]"
+              className="rounded-[50%] h-[180px] w-[180px]"
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base   leading-9 h-[70px] mt-1">
