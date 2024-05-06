@@ -138,7 +138,7 @@ const StudentStories = () => {
                 UK for my masters as well as the whole application process and
                 also arranged classes for my credibility interview. He was very
                 helpful and knowledgeable about the steps and was through in his
-                work. I would also like to thank Nithya Ma'am who took care of
+                work. I would also like to thank Nithya Ma&apos;am who took care of
                 the visa process. They have consistently responded to all of my
                 inquiries. It was certainly a blessing for me to choose them as
                 my supporters during my entire journey. Thank you for
@@ -239,7 +239,7 @@ const StudentStories = () => {
               Just a month of preparation, I smashed my IELTS target score. When
               i attend the class for the first time, i was scared of speaking in
               english. After a month of preparation i felt a profound
-              improvement and gave me so much confidence while i'm speaking. I
+              improvement and gave me so much confidence while i&apos;m speaking. I
               strongly recommend Valley journey to all those who wish to go for
               abroad studies.
             </ReactReadMoreReadLess>
@@ -284,7 +284,7 @@ const StudentStories = () => {
               My honest review about Valley Journey Consultancy, I was an
               ex-Ukrainian med student whose study came to an halt due to the
               infamous Ukraine-Russian war. I was at that point were I simply
-              did'nt see a chance to finish my studies and with coincidence I
+              did&apos;nt see a chance to finish my studies and with coincidence I
               came across Valley Journey Consultancy and decided to give a go
               with them. My consultant Mr. Sonu Mathew was extremely positive
               about my case with getting an admission to University in UK.
@@ -342,7 +342,7 @@ const StudentStories = () => {
               onReadMoreClicked={toggleExpand}
               onReadLessClicked={toggleExpand}
             >
-              The most trustable people ,I could say and that's from the
+              The most trustable people ,I could say and that&apos;s from the
               experiences I have got from them.Even during my university
               interviews the support I got from Sonu is unexplainable.I was so
               scared at the beginning,but through the support ,I have gained my
