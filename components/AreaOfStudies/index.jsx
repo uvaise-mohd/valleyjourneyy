@@ -66,7 +66,7 @@ const AreaOfStudies = () => {
             <Image
               src={agriculture}
               alt="agriculture"
-              className="rounded-[50%] h-[180px] w-[180px]"
+              className="rounded-full h-[200px] w-[180px] "
             />
           </motion.div>
           <motion.div
@@ -104,7 +104,7 @@ const AreaOfStudies = () => {
             <Image
               src={foodandscience}
               alt="agriculture"
-              className="rounded-[50%] h-[180px] w-[180px]"
+              className="rounded-full h-[200px] w-[180px] "
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)} className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
@@ -130,7 +130,7 @@ const AreaOfStudies = () => {
             <Image
               src={EnvironmentClimate}
               alt="agriculture"
-              className="rounded-full h-[180px] w-[180px]"
+              className="rounded-full h-[200px] w-[180px] "
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)} className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
@@ -156,7 +156,7 @@ const AreaOfStudies = () => {
             <Image
               src={disastermanagment}
               alt="agriculture"
-              className="rounded-full h-[180px] w-[180px]"
+              className="rounded-full h-[200px] w-[180px] "
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)} className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
@@ -182,7 +182,7 @@ const AreaOfStudies = () => {
             <Image
               src={ArchitectureConstruction}
               alt="agriculture"
-              className="rounded-[50%] h-[180px] w-[180px]"
+              className="rounded-full h-[200px] w-[180px] "
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)} className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
@@ -204,7 +204,7 @@ const AreaOfStudies = () => {
             <Image
               src={art}
               alt="agriculture"
-              className="rounded-[50%] h-[180px] w-[180px]"
+              className="rounded-full h-[200px] w-[180px] "
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
@@ -228,7 +228,7 @@ const AreaOfStudies = () => {
             <Image
               src={designPhotography}
               alt="agriculture"
-              className="rounded-[50%] h-[180px] w-[180px]"
+              className="rounded-full h-[200px] w-[180px] "
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
@@ -251,7 +251,7 @@ const AreaOfStudies = () => {
             <Image
               src={it}
               alt="agriculture"
-              className="rounded-[50%] h-[180px] w-[180px]"
+              className="rounded-full h-[200px] w-[180px] "
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
@@ -276,7 +276,7 @@ const AreaOfStudies = () => {
             <Image
               src={journalism}
               alt="agriculture"
-              className="rounded-[50%] h-[180px] w-[180px]"
+              className="rounded-full h-[200px] w-[180px] "
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
@@ -299,7 +299,7 @@ const AreaOfStudies = () => {
             <Image
               src={automobiles}
               alt="agriculture"
-              className="rounded-[50%] h-[180px] w-[180px]"
+              className="rounded-full h-[200px] w-[180px] "
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
@@ -323,7 +323,7 @@ const AreaOfStudies = () => {
             <Image
               src={eductn}
               alt="agriculture"
-              className="rounded-[50%] h-[180px] w-[180px]"
+              className="rounded-full h-[200px] w-[180px] "
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
@@ -346,7 +346,7 @@ const AreaOfStudies = () => {
             <Image
               src={bussinss}
               alt="agriculture"
-              className="rounded-[50%] h-[180px] w-[180px]"
+              className="rounded-full h-[200px] w-[180px] "
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
@@ -372,7 +372,7 @@ const AreaOfStudies = () => {
             <Image
               src={finance}
               alt="agriculture"
-              className="rounded-[50%] h-[180px] w-[180px]"
+              className="rounded-full h-[200px] w-[180px] "
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
@@ -396,7 +396,7 @@ const AreaOfStudies = () => {
             <Image
               src={health}
               alt="agriculture"
-              className="rounded-[50%] h-[180px] w-[180px]"
+              className="rounded-full h-[200px] w-[180px] "
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
@@ -422,7 +422,7 @@ const AreaOfStudies = () => {
             <Image
               src={animals}
               alt="agriculture"
-              className="rounded-[50%] h-[180px] w-[180px]"
+              className="rounded-full h-[200px] w-[180px] "
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
@@ -444,7 +444,7 @@ const AreaOfStudies = () => {
             <Image
               src={socialandbehaviouralscience}
               alt="agriculture"
-              className="rounded-[50%] h-[180px] w-[180px]"
+              className="rounded-full h-[200px] w-[180px] "
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
@@ -469,7 +469,7 @@ const AreaOfStudies = () => {
             <Image
               src={travelfashion}
               alt="agriculture"
-              className="rounded-[50%] h-[180px] w-[180px]"
+              className="rounded-full h-[200px] w-[180px]"
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
@@ -492,7 +492,7 @@ const AreaOfStudies = () => {
             <Image
               src={aviation}
               alt="agriculture"
-              className="rounded-[50%] h-[180px] w-[180px]"
+              className="rounded-full h-[200px] w-[180px] "
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
@@ -516,7 +516,7 @@ const AreaOfStudies = () => {
             <Image
               src={pharmacy}
               alt="agriculture"
-              className="rounded-[50%] h-[180px] w-[180px]"
+              className="rounded-full h-[200px] w-[180px] "
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
@@ -540,7 +540,7 @@ const AreaOfStudies = () => {
             <Image
               src={engineering}
               alt="agriculture"
-              className="rounded-[50%] h-[180px] w-[180px]"
+              className="rounded-full h-[200px] w-[180px] "
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base   leading-9 h-[70px] mt-1">
