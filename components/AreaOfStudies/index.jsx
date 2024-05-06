@@ -1,27 +1,27 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
-import agriculture from "../../public/images/svg/AreaOfStudies/agriculture.svg";
-import foodandscience from "../../public/images/svg/AreaOfStudies/foodscience.svg";
-import EnvironmentClimate from "../../public/images/svg/AreaOfStudies/enviornmentalclimate.svg";
-import disastermanagment from "../../public/images/svg/AreaOfStudies/disastermanagment.svg";
-import ArchitectureConstruction from "../../public/images/svg/AreaOfStudies/architectureandconstruction.svg";
-import art from "../../public/images/svg/AreaOfStudies/art.svg";
-import designPhotography from "../../public/images/svg/AreaOfStudies/designvideophotography.svg";
+import agriculture from "../../public/images/AreaOfStudiespng/agriculture.png";
+import foodandscience from "../../public/images/AreaOfStudiespng/foodscience.png";
+import EnvironmentClimate from "../../public/images/AreaOfStudiespng/enviornmentalclimate.png";
+import disastermanagment from "../../public/images/AreaOfStudiespng/disastermanagment.png";
+import ArchitectureConstruction from  "../../public/images/AreaOfStudiespng/architectureandconstruction.png"
+import art from "../../public/images/AreaOfStudiespng/art.png";
+import designPhotography from "../../public/images/AreaOfStudiespng/designvideophotography.png";
 
-import it from "../../public/images/svg/AreaOfStudies/itandcomputersceince.svg";
-import journalism from "../../public/images/svg/AreaOfStudies/journalismm.svg";
-import automobiles from "../../public/images/svg/AreaOfStudies/automobilee.svg";
-import eductn from "../../public/images/svg/AreaOfStudies/educationn.svg";
-import bussinss from "../../public/images/svg/AreaOfStudies/business.svg";
-import finance from "../../public/images/svg/AreaOfStudies/financebankinginvestment.svg";
-import health from "../../public/images/svg/AreaOfStudies/healthandwelbeing.svg";
-import animals from "../../public/images/svg/AreaOfStudies/animalss.svg";
-import socialandbehaviouralscience from "../../public/images/svg/AreaOfStudies/socialandbehaviouralscience.svg";
-import travelfashion from "../../public/images/svg/AreaOfStudies/traveltourismm.svg";
-import aviation from "../../public/images/svg/AreaOfStudies/aviationn.svg";
-import pharmacy from "../../public/images/svg/AreaOfStudies/pharmacyy.svg";
-import engineering from "../../public/images/svg/AreaOfStudies/engineeringg.svg";
+import it from "../../public/images/AreaOfStudiespng/itandcomputersceince.png";
+import journalism from "../../public/images/AreaOfStudiespng/journalismm.png";
+import automobiles from "../../public/images/AreaOfStudiespng/automobilee.png";
+import eductn from "../../public/images/AreaOfStudiespng/educationn.png";
+import bussinss from "../../public/images/AreaOfStudiespng/business.png";
+import finance from "../../public/images/AreaOfStudiespng/financebankinginvestment.png";
+import health from "../../public/images/AreaOfStudiespng/healthandwelbeing.png";
+import animals from "../../public/images/AreaOfStudiespng/animalss.png";
+import socialandbehaviouralscience from "../../public/images/AreaOfStudiespng/socialandbehaviouralscience.png";
+import travelfashion from "../../public/images/AreaOfStudiespng/traveltourismm.png";
+import aviation from "../../public/images/AreaOfStudiespng/aviationn.png";
+import pharmacy from "../../public/images/AreaOfStudiespng/pharmacyy.png";
+import engineering from "../../public/images/AreaOfStudiespng/engineeringg.png";
 import { Libre_Baskerville } from "next/font/google";
 import { motion, useAnimation } from "framer-motion";
 
@@ -155,7 +155,7 @@ const AreaOfStudies = () => {
             <Image
               src={disastermanagment}
               alt="agriculture"
-              className="rounded-[50%] h-[180px] w-[180px]"
+              className="rounded-[40%] h-[180px] w-[180px]"
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)} className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base leading-9 h-[70px] mt-1">
@@ -274,7 +274,7 @@ const AreaOfStudies = () => {
             <Image
               src={journalism}
               alt="agriculture"
-              className="rounded-[50%] h-[180px] w-[180px]"
+              className="rounded-[20%] h-[180px] w-[180px]"
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
@@ -297,7 +297,7 @@ const AreaOfStudies = () => {
             <Image
               src={automobiles}
               alt="agriculture"
-              className="rounded-[50%] h-[180px] w-[180px]"
+              className="rounded-[40%] h-[180px] w-[180px]"
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
@@ -321,7 +321,7 @@ const AreaOfStudies = () => {
             <Image
               src={eductn}
               alt="agriculture"
-              className="rounded-[50%] h-[180px] w-[180px]"
+              className="rounded-[30%] h-[180px] w-[180px]"
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
@@ -344,7 +344,7 @@ const AreaOfStudies = () => {
             <Image
               src={bussinss}
               alt="agriculture"
-              className="rounded-[50%] h-[180px] w-[180px]"
+              className="rounded-[30%] h-[180px] w-[180px]"
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
@@ -467,7 +467,7 @@ const AreaOfStudies = () => {
             <Image
               src={travelfashion}
               alt="agriculture"
-              className="rounded-[50%] h-[180px] w-[180px]"
+              className="rounded-[30%] h-[180px] w-[180px]"
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
@@ -490,7 +490,7 @@ const AreaOfStudies = () => {
             <Image
               src={aviation}
               alt="agriculture"
-              className="rounded-[50%] h-[180px] w-[180px]"
+              className="rounded-[30%] h-[180px] w-[180px]"
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
@@ -514,7 +514,7 @@ const AreaOfStudies = () => {
             <Image
               src={pharmacy}
               alt="agriculture"
-              className="rounded-[50%] h-[180px] w-[180px]"
+              className="rounded-[30%] h-[180px] w-[180px]"
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base  leading-9 h-[70px] mt-1">
@@ -538,7 +538,7 @@ const AreaOfStudies = () => {
             <Image
               src={engineering}
               alt="agriculture"
-              className="rounded-[50%] h-[180px] w-[180px]"
+              className="rounded-[30%] h-[180px] w-[180px]"
             />
           </motion.div>
           <motion.div {...listItemMotion(0.8)}  className="flex items-center justify-center text-[#156669] lg:text-xl xl:text-[22px] text-base   leading-9 h-[70px] mt-1">
