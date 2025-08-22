@@ -18,7 +18,7 @@ const libreBaskerville = Libre_Baskerville({
 });
 
 const aleo = Aleo({
-  weight: "700", // if single weight, otherwise you use array like [400, 500, 700],
+  weight: "700",
   style: "normal",
   subsets: ["latin"],
 });
@@ -88,15 +88,15 @@ const Hero = () => {
                   initial="initial"
                   animate="animate"
                 > */}
-                  <Image
-                    // src={main}
-                    src={herogif}
-                    height={1600}
-                    width={1400}
-                    // height={1400}
-                    // width={1200}
-                    alt="hero-image"
-                  />
+                <Image
+                  // src={main}
+                  src={herogif}
+                  height={1600}
+                  width={1400}
+                  // height={1400}
+                  // width={1200}
+                  alt="hero-image"
+                />
                 {/* </motion.div> */}
               </motion.div>
             </div>
