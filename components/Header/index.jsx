@@ -36,7 +36,7 @@ const menuVariants = {
 const NAV_LINKS = [
   { href: "#Countries", label: "Countries" },
   { href: "#Courses", label: "Courses" },
-  { href: "#IELTS", label: "IELTS" },
+  { href: "/ielts", label: "IELTS" },
   { href: "/about-us", label: "About Us" },
   { href: "#News", label: "News" },
   { href: "#Accommodation", label: "Accommodation" },

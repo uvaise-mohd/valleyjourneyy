@@ -4,7 +4,7 @@ import WhatWeOffers from "@/components/AboutUsPage/WhatWeOffers";
 import WhyUs from "@/components/AboutUsPage/WhyUs";
 
 
-export default function Home() {
+export default function AboutUs() {
   return (
     <>
       <HeroSection />
