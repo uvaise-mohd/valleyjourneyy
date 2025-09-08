@@ -4,6 +4,8 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { metadata } from "./metaData";
+import Providers from "./providers";
+
 
 // export const metadata = {
 //   title: "Valley Journey",
@@ -19,9 +21,11 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/fav.png" />
       </head>
       <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <Providers>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

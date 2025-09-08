@@ -1,16 +1,11 @@
-import HeroSection from "@/components/AboutUsPage/HeroSection";
-import MissionVission from "@/components/AboutUsPage/MissionVission";
-import WhatWeOffers from "@/components/AboutUsPage/WhatWeOffers";
-import WhyUs from "@/components/AboutUsPage/WhyUs";
+import AboutUsPage from "@/components/AboutUsPage/AboutUsPage";
+
 
 
 export default function AboutUs() {
   return (
     <>
-      <HeroSection />
-      <WhatWeOffers />
-      <WhyUs />
-      <MissionVission />
+      <AboutUsPage />
     </>
   );
 }
